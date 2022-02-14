@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from enum import Enum
 
@@ -7,7 +7,10 @@ from asl_turtlebot.msg import DetectedObject
 from gazebo_msgs.msg import ModelStates
 from geometry_msgs.msg import Twist, PoseArray, Pose2D, PoseStamped
 from std_msgs.msg import Float32MultiArray, String
+from visualization_msgs.msg import Marker
+from utils.utils import wrapToPi
 import tf
+import numpy as np
 
 class Mode(Enum):
     """State machine modes. Feel free to change."""
@@ -17,8 +20,6 @@ class Mode(Enum):
     CROSS = 4
     NAV = 5
     MANUAL = 6
-    
-    PICKUP = 7
 
 
 class SupervisorParams:
@@ -35,8 +36,8 @@ class SupervisorParams:
         self.mapping = rospy.get_param("map")
 
         # Threshold at which we consider the robot at a location
-        self.pos_eps = rospy.get_param("~pos_eps", 0.1)
-        self.theta_eps = rospy.get_param("~theta_eps", 0.3)
+        self.pos_eps = rospy.get_param("~pos_eps", 0.2)
+        self.theta_eps = rospy.get_param("~theta_eps", 0.5)
 
         # Time to stop at a stop sign
         self.stop_time = rospy.get_param("~stop_time", 3.)
@@ -77,41 +78,48 @@ class Supervisor:
         self.mode = Mode.IDLE
         self.prev_mode = None  # For printing purposes
         
-        # Final Project
-        self.object_locations = []
-        
-        
-        
-        
+        # Marker Count
+        self.marker_count = 0
 
         ########## PUBLISHERS ##########
 
         # Command pose for controller
         self.pose_goal_publisher = rospy.Publisher('/cmd_pose', Pose2D, queue_size=10)
+        self.nav_goal_publisher = rospy.Publisher('/cmd_nav', Pose2D, queue_size=10)
 
         # Command vel (used for idling)
         self.cmd_vel_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+        
+        self.objects_pub = rospy.Publisher('/detected_objects', String)
+        
+        self.fire_pub = rospy.Publisher("/fire",String)
+        
+        self.marker_pub = rospy.Publisher("/object_marker", Marker, queue_size=10)
+        
+        # Final Project
+        self.queue = [] #list of goal positions in sequential order
+        #self.object_locations = {'tv':(3.2, 0.5, np.pi), 'airplane': (2.5, 0.5, np.pi), 'stop_sign': (0.25, 1.65, 0)}
+        self.object_locations = dict() #Store object locations as dictionary
+        self.object_distances = dict() #Store corresponding distances
+        
+        self.reached_goal = False # general flage for reaching goal
+        self.explored  = False
+        self.picked_up = False
 
         ########## SUBSCRIBERS ##########
 
         # Stop sign detector
-
-        ######## DETECTORS ######
-        
         rospy.Subscriber('/detector/stop_sign', DetectedObject, self.detected_object_callback)
-        rospy.Subscriber('/detector/dog', DetectedObject, self.detected_object_callback)
-        rospy.Subscriber('/detector/cat', DetectedObject, self.detected_object_callback)
-        rospy.Subscriber("/detector/stop_sign",DetectedObject, self.detected_object_callback)
-        rospy.Subscriber("/detector/apple",DetectedObject, self.detected_object_callback)
-        rospy.Subscriber("/detector/pizza",DetectedObject, self.detected_object_callback)
-        rospy.Subscriber("/detector/broccoli",DetectedObject, self.detected_object_callback)
-        rospy.Subscriber("/detector/banana",DetectedObject, self.detected_object_callback)
-
+        #rospy.Subscriber('/detector/sports_ball', DetectedObject, self.detected_object_callback)
+        rospy.Subscriber('/detector/cup', DetectedObject, self.detected_object_callback)
+        rospy.Subscriber("/detector/fire_hydrant",DetectedObject, self.detected_object_callback)
+        #rospy.Subscriber("/detector/umbrella",DetectedObject, self.detected_object_callback)
+        #rospy.Subscriber("/detector/airplane",DetectedObject, self.detected_object_callback)
         
-        
-
         # High-level navigation pose
         rospy.Subscriber('/nav_pose', Pose2D, self.nav_pose_callback)
+
+        rospy.Subscriber('/rescue_items', String, self.rescue_items_callback)
 
         # If using gazebo, we have access to perfect state
         if self.params.use_gazebo:
@@ -127,6 +135,61 @@ class Supervisor:
         
 
     ########## SUBSCRIBER CALLBACKS ##########
+    
+    def rescue_items_callback(self, msg):
+    	print(f"Received items to rescue: {msg.data}")
+    	objects = msg.data.split()
+    	for obj in objects:
+    	    self.queue.append(self.object_locations[obj])
+    	self.explored = True
+        
+
+    def detected_object_callback(self,data):
+
+        if data.confidence > 0.5 and data.distance < 0.5:
+            x_o=self.x
+            y_o=self.y
+            
+            if(data.name == "stop_sign" and self.mode == Mode.NAV and data.confidence > 0.5):
+                print("STOP SIGN DISTANCE, Theta", data.distance, data.thetaleft,data.thetaright)
+                # distance of the stop sign
+                dist = data.distance
+                # if close enough and in nav mode, stop
+                if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.NAV:
+                    self.init_stop_sign()
+                        
+            if(data.name == "fire_hydrant" and self.mode == Mode.NAV and data.confidence > 0.5):
+                self.fire_pub.publish("FIRE FIRE FIRE!!!")
+
+            if data.name not in self.object_locations.keys():
+                self.object_locations[data.name] = (x_o, y_o, self.theta)
+                self.objects_pub.publish(String(data.name))
+                self.object_distances[data.name] = data.distance
+                print("object location:",self.x,self.y,self.theta,data.name)
+               
+                object_marker = Marker()
+                object_marker.header.frame_id = "map"
+                object_marker.header.stamp = rospy.Time()
+                object_marker.id = self.marker_count
+                self.marker_count += 1
+                object_marker.type = 2 # sphere
+    		
+                object_marker.pose.position.x = x_o 
+                object_marker.pose.position.y = y_o 
+                object_marker.pose.position.z = 0
+                object_marker.color.b = 1.0
+                object_marker.color.g = 0.0
+                object_marker.color.r = 0.0
+                object_marker.color.a = 1.0
+                object_marker.scale.x = 0.2
+                object_marker.scale.y = 0.2
+                object_marker.scale.z = 0.2
+                self.marker_pub.publish(object_marker)
+            elif data.distance < self.object_distances[data.name]:
+                print('Updating object location: ', data.name)
+                self.object_locations[data.name] = (x_o, y_o, self.theta)
+                self.object_distances[data.name] = data.distance
+
 
     def gazebo_callback(self, msg):
         if "turtlebot3_burger" not in msg.name:
@@ -173,47 +236,10 @@ class Supervisor:
         dist = msg.distance
 
         # if close enough and in nav mode, stop
-        if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.PICKUP:
+        if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.NAV:
             self.init_stop_sign()
 
-    def stop_sign_detected_callback(self, msg):
-        """ callback for when the detector has found a stop sign. Note that
-        a distance of 0 can mean that the lidar did not pickup the stop sign at all """
 
-        # distance of the stop sign
-        dist = msg.distance
-
-        # if close enough and in nav mode, stop
-        if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.PICKUP:
-            self.init_stop_sign()
-
-    def detected_object_callback(self,data):
-        if data.confidence > 0.5 and data.distance < 1.0:
-            print('In detected callback')
-
-            x_o=self.x
-            y_o=self.y
-
-            
-            if(data.name == "stop_sign" and not self.crossing and data.confidence > 0.75):
-                print("STOP SIGN DISTANCE, Theta", data.distance, data.thetaleft,data.thetaright)
-                # distance of the stop sign
-                dist = data.distance
-                # if close enough and in nav mode, stop
-                if dist > 0 and dist < self.stop_min_dist and (self.mode == Mode.PICKUP or self.mode == Mode.EXPLORE):
-                        self.init_stop_sign()
-
-            if data.name not in self.vendor_list.keys():
-                self.vendor_list[data.name] = (x_o, y_o, self.theta)
-                self.vendor_pub.publish(String(data.name))
-                self.vendor_dist[data.name] = data.distance
-                print("ADDING TO VENDORS", x_o, y_o, self.theta, data.name)
-                print("Robot coordinates:",self.x,self.y,self.theta)
-            else:
-                if data.distance < self.vendor_dist[data.name]:
-                    print('Updating vendor: ', data.name)
-                    self.vendor_list[data.name] = (x_o, y_o, self.theta)
-                    self.vendor_dist[data.name] = data.distance
     ########## STATE MACHINE ACTIONS ##########
 
     ########## Code starts here ##########
@@ -238,7 +264,21 @@ class Supervisor:
         nav_g_msg.y = self.y_g
         nav_g_msg.theta = self.theta_g
 
-        self.pose_goal_publisher.publish(nav_g_msg)
+        self.nav_goal_publisher.publish(nav_g_msg)
+        
+    def nav_to_home(self):
+        """ sends the current desired pose to the naviagtor """
+
+        nav_g_msg = Pose2D()
+        nav_g_msg.x = 3.2
+        nav_g_msg.y = 1.6
+        nav_g_msg.theta = 0
+        print("Going Home")
+
+        self.nav_goal_publisher.publish(nav_g_msg)
+        if self.close_to(self.x_g, self.y_g, self.theta_g):
+        	self.mode = Mode.IDLE
+    
 
     def stay_idle(self):
         """ sends zero velocity to stay put """
@@ -248,10 +288,10 @@ class Supervisor:
 
     def close_to(self, x, y, theta):
         """ checks if the robot is at a pose within some threshold """
-
+        
         return abs(x - self.x) < self.params.pos_eps and \
                abs(y - self.y) < self.params.pos_eps and \
-               abs(theta - self.theta) < self.params.theta_eps
+               abs(wrapToPi(theta - self.theta)) < self.params.theta_eps
 
     def init_stop_sign(self):
         """ initiates a stop sign maneuver """
@@ -276,6 +316,8 @@ class Supervisor:
 
         return self.mode == Mode.CROSS and \
                rospy.get_rostime() - self.cross_start > rospy.Duration.from_sec(self.params.crossing_time)
+               
+    
 
     ########## Code ends here ##########
 
@@ -301,13 +343,18 @@ class Supervisor:
             rospy.loginfo("Current mode: %s", self.mode)
             self.prev_mode = self.mode
 
+
         ########## Code starts here ##########
         # TODO: Currently the state machine will just go to the pose without stopping
         #       at the stop sign.
-
+        
+        
         if self.mode == Mode.IDLE:
             # Send zero velocity
             self.stay_idle()
+            if self.explored and not self.picked_up:
+                self.mode = Mode.NAV
+                self.x_g, self.y_g, self.theta_g = self.queue.pop(0)
 
         elif self.mode == Mode.POSE:
             # Moving towards a desired pose
@@ -327,17 +374,28 @@ class Supervisor:
             if self.has_crossed():
                 self.mode = Mode.NAV
 
-
         elif self.mode == Mode.NAV:
             if self.close_to(self.x_g, self.y_g, self.theta_g):
-                self.mode = Mode.IDLE
+                if not self.explored:
+                    self.nav_to_pose()
+                else:
+                    # Rescue
+                    print("Picking up Item")
+                    rescue_start = rospy.get_rostime()
+                    while(rospy.get_rostime() - rescue_start) < rospy.Duration.from_sec(3): #Waiting for Rescue 
+                    	self.stay_idle()
+                    	
+                    if len(self.queue) > 0:
+                        print("Navigating to next item")
+                        self.x_g, self.y_g, self.theta_g = self.queue.pop(0)
+                        self.nav_to_pose()
+                        
+                    else:
+                        print("Picked up all items")
+                        self.picked_up = True
+                        self.nav_to_home()
             else:
-                self.nav_to_pose()
-
-        elif self.mode == Mode.PICKUP:
-            self.x_g, self.y_g, self.theta_g = self.object_locations.pop(0)
-            self.nav_to_pose() # send stored goal position to navigator
-
+            	self.nav_to_pose()
         else:
             raise Exception("This mode is not supported: {}".format(str(self.mode)))
 
@@ -353,3 +411,4 @@ class Supervisor:
 if __name__ == '__main__':
     sup = Supervisor()
     sup.run()
+    

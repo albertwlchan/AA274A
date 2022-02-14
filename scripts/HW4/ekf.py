@@ -386,9 +386,9 @@ class EkfSlam(Ekf):
         	innov_covs = pred_covs + Q
             
         	Mahalanobis_distances = np.einsum('ij,ij->i',innovs,np.einsum('ijk,ik->ij', np.linalg.inv(innov_covs), innovs))
-            
+            	
         	j_min = Mahalanobis_distances.argmin()
-        	# import pdb; pdb.set_trace()
+        	#import pdb; pdb.set_trace()
             
             
         	if Mahalanobis_distances[j_min] < self.g ** 2:
@@ -454,3 +454,4 @@ class EkfSlam(Ekf):
             Hx_list.append(Hx)
 
         return hs, Hx_list
+

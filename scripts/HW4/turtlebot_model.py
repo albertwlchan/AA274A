@@ -129,3 +129,4 @@ def normalize_line_parameters(h, Hx=None):
     if Hx is not None:
         return h, Hx
     return h
+

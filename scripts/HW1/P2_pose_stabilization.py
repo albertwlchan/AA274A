@@ -27,21 +27,19 @@ class PoseController:
         Inputs:
             x,y,th: Current state
             t: Current time (you shouldn't need to use this)
-        Outputs: 
+        Outputs:
             V, om: Control actions
 
         Hints: You'll need to use the wrapToPi function. The np.sinc function
         may also be useful, look up its documentation
         """
         ########## Code starts here ##########
-        yp = self.y_g-y
-        xp = self.x_g-x
-        rho = (yp**2+xp**2)**0.5
-        alpha = wrapToPi(np.arctan2(yp,xp) - th) 
-        delta = wrapToPi(np.arctan2(yp,xp) - self.th_g)
-        V = self.k1*rho*np.cos(alpha)
-        om = self.k2*alpha+self.k1*np.sin(alpha)*np.cos(alpha)/alpha*(alpha+self.k3*delta)
-        ########## Code ends here ##########
+        rho = np.sqrt( (x - self.x_g) ** 2 + (y - self.y_g) ** 2)
+        alpha = wrapToPi(np.arctan2(y - self.y_g, x - self.x_g) - th + np.pi)
+        delta = wrapToPi(alpha + th - self.th_g)
+        V = self.k1 * rho * np.cos(alpha)
+        om = self.k2 * alpha + self.k1 * np.sinc(alpha / np.pi) * np.cos(alpha) * (alpha + self.k3 * delta)
+       ########## Code ends here ##########
 
         # apply control limits
         V = np.clip(V, -self.V_max, self.V_max)
