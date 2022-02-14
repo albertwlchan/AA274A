@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find asl_turtlebot)/launch/project.launch">
+      <arg name="v_max" value="0.1"/>
+      <arg name="om_max" value="0.2c"/>
+    </include>
+
+</launch>

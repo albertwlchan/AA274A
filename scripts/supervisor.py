@@ -17,6 +17,8 @@ class Mode(Enum):
     CROSS = 4
     NAV = 5
     MANUAL = 6
+    
+    PICKUP = 7
 
 
 class SupervisorParams:
@@ -74,6 +76,13 @@ class Supervisor:
         # Current mode
         self.mode = Mode.IDLE
         self.prev_mode = None  # For printing purposes
+        
+        # Final Project
+        self.object_locations = []
+        
+        
+        
+        
 
         ########## PUBLISHERS ##########
 
@@ -86,7 +95,20 @@ class Supervisor:
         ########## SUBSCRIBERS ##########
 
         # Stop sign detector
-        rospy.Subscriber('/detector/stop_sign', DetectedObject, self.stop_sign_detected_callback)
+
+        ######## DETECTORS ######
+        
+        rospy.Subscriber('/detector/stop_sign', DetectedObject, self.detected_object_callback)
+        rospy.Subscriber('/detector/dog', DetectedObject, self.detected_object_callback)
+        rospy.Subscriber('/detector/cat', DetectedObject, self.detected_object_callback)
+        rospy.Subscriber("/detector/stop_sign",DetectedObject, self.detected_object_callback)
+        rospy.Subscriber("/detector/apple",DetectedObject, self.detected_object_callback)
+        rospy.Subscriber("/detector/pizza",DetectedObject, self.detected_object_callback)
+        rospy.Subscriber("/detector/broccoli",DetectedObject, self.detected_object_callback)
+        rospy.Subscriber("/detector/banana",DetectedObject, self.detected_object_callback)
+
+        
+        
 
         # High-level navigation pose
         rospy.Subscriber('/nav_pose', Pose2D, self.nav_pose_callback)
@@ -151,10 +173,47 @@ class Supervisor:
         dist = msg.distance
 
         # if close enough and in nav mode, stop
-        if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.NAV:
+        if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.PICKUP:
             self.init_stop_sign()
 
+    def stop_sign_detected_callback(self, msg):
+        """ callback for when the detector has found a stop sign. Note that
+        a distance of 0 can mean that the lidar did not pickup the stop sign at all """
 
+        # distance of the stop sign
+        dist = msg.distance
+
+        # if close enough and in nav mode, stop
+        if dist > 0 and dist < self.params.stop_min_dist and self.mode == Mode.PICKUP:
+            self.init_stop_sign()
+
+    def detected_object_callback(self,data):
+        if data.confidence > 0.5 and data.distance < 1.0:
+            print('In detected callback')
+
+            x_o=self.x
+            y_o=self.y
+
+            
+            if(data.name == "stop_sign" and not self.crossing and data.confidence > 0.75):
+                print("STOP SIGN DISTANCE, Theta", data.distance, data.thetaleft,data.thetaright)
+                # distance of the stop sign
+                dist = data.distance
+                # if close enough and in nav mode, stop
+                if dist > 0 and dist < self.stop_min_dist and (self.mode == Mode.PICKUP or self.mode == Mode.EXPLORE):
+                        self.init_stop_sign()
+
+            if data.name not in self.vendor_list.keys():
+                self.vendor_list[data.name] = (x_o, y_o, self.theta)
+                self.vendor_pub.publish(String(data.name))
+                self.vendor_dist[data.name] = data.distance
+                print("ADDING TO VENDORS", x_o, y_o, self.theta, data.name)
+                print("Robot coordinates:",self.x,self.y,self.theta)
+            else:
+                if data.distance < self.vendor_dist[data.name]:
+                    print('Updating vendor: ', data.name)
+                    self.vendor_list[data.name] = (x_o, y_o, self.theta)
+                    self.vendor_dist[data.name] = data.distance
     ########## STATE MACHINE ACTIONS ##########
 
     ########## Code starts here ##########
@@ -259,17 +318,25 @@ class Supervisor:
 
         elif self.mode == Mode.STOP:
             # At a stop sign
-            self.nav_to_pose()
+            self.stay_idle()
+            if self.has_stopped():
+                self.init_crossing()
 
         elif self.mode == Mode.CROSS:
             # Crossing an intersection
-            self.nav_to_pose()
+            if self.has_crossed():
+                self.mode = Mode.NAV
+
 
         elif self.mode == Mode.NAV:
             if self.close_to(self.x_g, self.y_g, self.theta_g):
                 self.mode = Mode.IDLE
             else:
                 self.nav_to_pose()
+
+        elif self.mode == Mode.PICKUP:
+            self.x_g, self.y_g, self.theta_g = self.object_locations.pop(0)
+            self.nav_to_pose() # send stored goal position to navigator
 
         else:
             raise Exception("This mode is not supported: {}".format(str(self.mode)))

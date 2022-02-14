@@ -1,0 +1,2555 @@
+    PID TTY          TIME CMD
+      1 ?        00:03:18 systemd
+      2 ?        00:00:01 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      6 ?        00:00:00 kworker/0:0H-kblockd
+      9 ?        00:00:51 kworker/u128:0-ixgbe
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:44 ksoftirqd/0
+     12 ?        00:09:35 rcu_sched
+     13 ?        00:00:39 migration/0
+     14 ?        00:00:00 idle_inject/0
+     15 ?        00:00:00 cpuhp/0
+     16 ?        00:00:00 cpuhp/1
+     17 ?        00:00:00 idle_inject/1
+     18 ?        00:00:40 migration/1
+     19 ?        00:00:40 ksoftirqd/1
+     21 ?        00:00:00 kworker/1:0H-kblockd
+     22 ?        00:00:00 cpuhp/2
+     23 ?        00:00:00 idle_inject/2
+     24 ?        00:00:39 migration/2
+     25 ?        00:00:38 ksoftirqd/2
+     27 ?        00:00:00 kworker/2:0H-kblockd
+     28 ?        00:00:00 cpuhp/3
+     29 ?        00:00:00 idle_inject/3
+     30 ?        00:00:39 migration/3
+     31 ?        00:00:37 ksoftirqd/3
+     33 ?        00:00:00 kworker/3:0H
+     34 ?        00:00:00 cpuhp/4
+     35 ?        00:00:00 idle_inject/4
+     36 ?        00:00:38 migration/4
+     37 ?        00:00:38 ksoftirqd/4
+     39 ?        00:00:00 kworker/4:0H-kblockd
+     40 ?        00:00:00 cpuhp/5
+     41 ?        00:00:00 idle_inject/5
+     42 ?        00:00:38 migration/5
+     43 ?        00:00:36 ksoftirqd/5
+     45 ?        00:00:00 kworker/5:0H-kblockd
+     46 ?        00:00:00 cpuhp/6
+     47 ?        00:00:00 idle_inject/6
+     48 ?        00:00:37 migration/6
+     49 ?        00:00:37 ksoftirqd/6
+     51 ?        00:00:00 kworker/6:0H-kblockd
+     52 ?        00:00:00 cpuhp/7
+     53 ?        00:00:00 idle_inject/7
+     54 ?        00:00:37 migration/7
+     55 ?        00:00:37 ksoftirqd/7
+     57 ?        00:00:00 kworker/7:0H-kblockd
+     58 ?        00:00:00 cpuhp/8
+     59 ?        00:00:00 idle_inject/8
+     60 ?        00:00:37 migration/8
+     61 ?        00:00:37 ksoftirqd/8
+     63 ?        00:00:00 kworker/8:0H-kblockd
+     64 ?        00:00:00 cpuhp/9
+     65 ?        00:00:00 idle_inject/9
+     66 ?        00:00:36 migration/9
+     67 ?        00:00:35 ksoftirqd/9
+     69 ?        00:00:00 kworker/9:0H-kblockd
+     70 ?        00:00:00 cpuhp/10
+     71 ?        00:00:00 idle_inject/10
+     72 ?        00:00:36 migration/10
+     73 ?        00:00:36 ksoftirqd/10
+     75 ?        00:00:00 kworker/10:0H-kblockd
+     76 ?        00:00:00 cpuhp/11
+     77 ?        00:00:00 idle_inject/11
+     78 ?        00:00:36 migration/11
+     79 ?        00:00:35 ksoftirqd/11
+     81 ?        00:00:00 kworker/11:0H-kblockd
+     82 ?        00:00:00 cpuhp/12
+     83 ?        00:00:00 idle_inject/12
+     84 ?        00:00:36 migration/12
+     85 ?        00:00:36 ksoftirqd/12
+     87 ?        00:00:00 kworker/12:0H-kblockd
+     88 ?        00:00:00 cpuhp/13
+     89 ?        00:00:00 idle_inject/13
+     90 ?        00:00:36 migration/13
+     91 ?        00:00:37 ksoftirqd/13
+     93 ?        00:00:00 kworker/13:0H-kblockd
+     94 ?        00:00:00 cpuhp/14
+     95 ?        00:00:00 idle_inject/14
+     96 ?        00:00:36 migration/14
+     97 ?        00:00:36 ksoftirqd/14
+     99 ?        00:00:00 kworker/14:0H-kblockd
+    100 ?        00:00:00 cpuhp/15
+    101 ?        00:00:00 idle_inject/15
+    102 ?        00:00:36 migration/15
+    103 ?        00:00:36 ksoftirqd/15
+    105 ?        00:00:00 kworker/15:0H-kblockd
+    106 ?        00:00:00 cpuhp/16
+    107 ?        00:00:00 idle_inject/16
+    108 ?        00:00:41 migration/16
+    109 ?        00:00:27 ksoftirqd/16
+    111 ?        00:00:00 kworker/16:0H-kblockd
+    113 ?        00:00:00 cpuhp/17
+    114 ?        00:00:00 idle_inject/17
+    115 ?        00:00:39 migration/17
+    116 ?        00:00:29 ksoftirqd/17
+    118 ?        00:00:00 kworker/17:0H-kblockd
+    119 ?        00:00:00 cpuhp/18
+    120 ?        00:00:00 idle_inject/18
+    121 ?        00:00:37 migration/18
+    122 ?        00:00:28 ksoftirqd/18
+    124 ?        00:00:00 kworker/18:0H-kblockd
+    125 ?        00:00:00 cpuhp/19
+    126 ?        00:00:00 idle_inject/19
+    127 ?        00:00:37 migration/19
+    128 ?        00:00:27 ksoftirqd/19
+    130 ?        00:00:00 kworker/19:0H-kblockd
+    131 ?        00:00:00 cpuhp/20
+    132 ?        00:00:00 idle_inject/20
+    133 ?        00:00:36 migration/20
+    134 ?        00:00:27 ksoftirqd/20
+    136 ?        00:00:00 kworker/20:0H-events_highpri
+    137 ?        00:00:00 cpuhp/21
+    138 ?        00:00:00 idle_inject/21
+    139 ?        00:00:36 migration/21
+    140 ?        00:00:27 ksoftirqd/21
+    142 ?        00:00:00 kworker/21:0H-kblockd
+    143 ?        00:00:00 cpuhp/22
+    144 ?        00:00:00 idle_inject/22
+    145 ?        00:00:36 migration/22
+    146 ?        00:00:27 ksoftirqd/22
+    148 ?        00:00:00 kworker/22:0H-kblockd
+    149 ?        00:00:00 cpuhp/23
+    150 ?        00:00:00 idle_inject/23
+    151 ?        00:00:35 migration/23
+    152 ?        00:00:27 ksoftirqd/23
+    154 ?        00:00:00 kworker/23:0H-kblockd
+    155 ?        00:00:00 cpuhp/24
+    156 ?        00:00:00 idle_inject/24
+    157 ?        00:00:35 migration/24
+    158 ?        00:00:27 ksoftirqd/24
+    160 ?        00:00:00 kworker/24:0H-kblockd
+    161 ?        00:00:00 cpuhp/25
+    162 ?        00:00:00 idle_inject/25
+    163 ?        00:00:35 migration/25
+    164 ?        00:00:26 ksoftirqd/25
+    166 ?        00:00:00 kworker/25:0H-kblockd
+    167 ?        00:00:00 cpuhp/26
+    168 ?        00:00:00 idle_inject/26
+    169 ?        00:00:34 migration/26
+    170 ?        00:00:27 ksoftirqd/26
+    172 ?        00:00:00 kworker/26:0H-events_highpri
+    173 ?        00:00:00 cpuhp/27
+    174 ?        00:00:00 idle_inject/27
+    175 ?        00:00:34 migration/27
+    176 ?        00:00:27 ksoftirqd/27
+    178 ?        00:00:00 kworker/27:0H-kblockd
+    179 ?        00:00:00 cpuhp/28
+    180 ?        00:00:00 idle_inject/28
+    181 ?        00:00:34 migration/28
+    182 ?        00:00:27 ksoftirqd/28
+    184 ?        00:00:00 kworker/28:0H-events_highpri
+    185 ?        00:00:00 cpuhp/29
+    186 ?        00:00:00 idle_inject/29
+    187 ?        00:00:34 migration/29
+    188 ?        00:00:28 ksoftirqd/29
+    190 ?        00:00:00 kworker/29:0H-kblockd
+    191 ?        00:00:00 cpuhp/30
+    192 ?        00:00:00 idle_inject/30
+    193 ?        00:00:34 migration/30
+    194 ?        00:00:27 ksoftirqd/30
+    196 ?        00:00:00 kworker/30:0H-kblockd
+    197 ?        00:00:00 cpuhp/31
+    198 ?        00:00:00 idle_inject/31
+    199 ?        00:00:34 migration/31
+    200 ?        00:00:27 ksoftirqd/31
+    202 ?        00:00:00 kworker/31:0H-kblockd
+    203 ?        00:00:00 cpuhp/32
+    204 ?        00:00:00 idle_inject/32
+    205 ?        00:00:35 migration/32
+    206 ?        00:00:36 ksoftirqd/32
+    208 ?        00:00:00 kworker/32:0H-kblockd
+    209 ?        00:00:00 cpuhp/33
+    210 ?        00:00:00 idle_inject/33
+    211 ?        00:00:35 migration/33
+    212 ?        00:00:38 ksoftirqd/33
+    214 ?        00:00:00 kworker/33:0H
+    215 ?        00:00:00 cpuhp/34
+    216 ?        00:00:00 idle_inject/34
+    217 ?        00:00:35 migration/34
+    218 ?        00:00:36 ksoftirqd/34
+    220 ?        00:00:00 kworker/34:0H-kblockd
+    221 ?        00:00:00 cpuhp/35
+    222 ?        00:00:00 idle_inject/35
+    223 ?        00:00:35 migration/35
+    224 ?        00:00:37 ksoftirqd/35
+    226 ?        00:00:00 kworker/35:0H-kblockd
+    227 ?        00:00:00 cpuhp/36
+    228 ?        00:00:00 idle_inject/36
+    229 ?        00:00:35 migration/36
+    230 ?        00:00:36 ksoftirqd/36
+    232 ?        00:00:00 kworker/36:0H-kblockd
+    233 ?        00:00:00 cpuhp/37
+    234 ?        00:00:00 idle_inject/37
+    235 ?        00:00:34 migration/37
+    236 ?        00:00:36 ksoftirqd/37
+    238 ?        00:00:00 kworker/37:0H-kblockd
+    239 ?        00:00:00 cpuhp/38
+    240 ?        00:00:00 idle_inject/38
+    241 ?        00:00:34 migration/38
+    242 ?        00:00:36 ksoftirqd/38
+    244 ?        00:00:00 kworker/38:0H-kblockd
+    245 ?        00:00:00 cpuhp/39
+    246 ?        00:00:00 idle_inject/39
+    247 ?        00:00:34 migration/39
+    248 ?        00:00:36 ksoftirqd/39
+    250 ?        00:00:00 kworker/39:0H-kblockd
+    251 ?        00:00:00 cpuhp/40
+    252 ?        00:00:00 idle_inject/40
+    253 ?        00:00:34 migration/40
+    254 ?        00:00:36 ksoftirqd/40
+    256 ?        00:00:00 kworker/40:0H-kblockd
+    257 ?        00:00:00 cpuhp/41
+    258 ?        00:00:00 idle_inject/41
+    259 ?        00:00:34 migration/41
+    260 ?        00:00:37 ksoftirqd/41
+    262 ?        00:00:00 kworker/41:0H-kblockd
+    263 ?        00:00:00 cpuhp/42
+    264 ?        00:00:00 idle_inject/42
+    265 ?        00:00:34 migration/42
+    266 ?        00:00:36 ksoftirqd/42
+    268 ?        00:00:00 kworker/42:0H-kblockd
+    269 ?        00:00:00 cpuhp/43
+    270 ?        00:00:00 idle_inject/43
+    271 ?        00:00:34 migration/43
+    272 ?        00:00:36 ksoftirqd/43
+    274 ?        00:00:00 kworker/43:0H-kblockd
+    275 ?        00:00:00 cpuhp/44
+    276 ?        00:00:00 idle_inject/44
+    277 ?        00:00:34 migration/44
+    278 ?        00:00:36 ksoftirqd/44
+    280 ?        00:00:00 kworker/44:0H-kblockd
+    281 ?        00:00:00 cpuhp/45
+    282 ?        00:00:00 idle_inject/45
+    283 ?        00:00:34 migration/45
+    284 ?        00:00:37 ksoftirqd/45
+    286 ?        00:00:00 kworker/45:0H-kblockd
+    287 ?        00:00:00 cpuhp/46
+    288 ?        00:00:00 idle_inject/46
+    289 ?        00:00:34 migration/46
+    290 ?        00:00:37 ksoftirqd/46
+    292 ?        00:00:00 kworker/46:0H-kblockd
+    293 ?        00:00:00 cpuhp/47
+    294 ?        00:00:00 idle_inject/47
+    295 ?        00:00:34 migration/47
+    296 ?        00:00:36 ksoftirqd/47
+    298 ?        00:00:00 kworker/47:0H
+    299 ?        00:00:00 cpuhp/48
+    300 ?        00:00:00 idle_inject/48
+    301 ?        00:00:32 migration/48
+    302 ?        00:00:27 ksoftirqd/48
+    304 ?        00:00:00 kworker/48:0H-kblockd
+    305 ?        00:00:00 cpuhp/49
+    306 ?        00:00:00 idle_inject/49
+    307 ?        00:00:33 migration/49
+    308 ?        00:00:27 ksoftirqd/49
+    310 ?        00:00:00 kworker/49:0H-kblockd
+    311 ?        00:00:00 cpuhp/50
+    312 ?        00:00:00 idle_inject/50
+    313 ?        00:00:33 migration/50
+    314 ?        00:00:26 ksoftirqd/50
+    316 ?        00:00:00 kworker/50:0H-kblockd
+    317 ?        00:00:00 cpuhp/51
+    318 ?        00:00:00 idle_inject/51
+    319 ?        00:00:33 migration/51
+    320 ?        00:00:26 ksoftirqd/51
+    322 ?        00:00:00 kworker/51:0H-kblockd
+    323 ?        00:00:00 cpuhp/52
+    324 ?        00:00:00 idle_inject/52
+    325 ?        00:00:33 migration/52
+    326 ?        00:00:26 ksoftirqd/52
+    328 ?        00:00:00 kworker/52:0H-kblockd
+    329 ?        00:00:00 cpuhp/53
+    330 ?        00:00:00 idle_inject/53
+    331 ?        00:00:32 migration/53
+    332 ?        00:00:27 ksoftirqd/53
+    334 ?        00:00:00 kworker/53:0H-kblockd
+    335 ?        00:00:00 cpuhp/54
+    336 ?        00:00:00 idle_inject/54
+    337 ?        00:00:33 migration/54
+    338 ?        00:00:27 ksoftirqd/54
+    340 ?        00:00:00 kworker/54:0H
+    341 ?        00:00:00 cpuhp/55
+    342 ?        00:00:00 idle_inject/55
+    343 ?        00:00:32 migration/55
+    344 ?        00:00:26 ksoftirqd/55
+    346 ?        00:00:00 kworker/55:0H
+    347 ?        00:00:00 cpuhp/56
+    348 ?        00:00:00 idle_inject/56
+    349 ?        00:00:32 migration/56
+    350 ?        00:00:26 ksoftirqd/56
+    352 ?        00:00:00 kworker/56:0H-kblockd
+    353 ?        00:00:00 cpuhp/57
+    354 ?        00:00:00 idle_inject/57
+    355 ?        00:00:32 migration/57
+    356 ?        00:00:27 ksoftirqd/57
+    358 ?        00:00:00 kworker/57:0H
+    359 ?        00:00:00 cpuhp/58
+    360 ?        00:00:00 idle_inject/58
+    361 ?        00:00:32 migration/58
+    362 ?        00:00:26 ksoftirqd/58
+    364 ?        00:00:00 kworker/58:0H-kblockd
+    365 ?        00:00:00 cpuhp/59
+    366 ?        00:00:00 idle_inject/59
+    367 ?        00:00:32 migration/59
+    368 ?        00:00:25 ksoftirqd/59
+    370 ?        00:00:00 kworker/59:0H-kblockd
+    371 ?        00:00:00 cpuhp/60
+    372 ?        00:00:00 idle_inject/60
+    373 ?        00:00:32 migration/60
+    374 ?        00:00:27 ksoftirqd/60
+    376 ?        00:00:00 kworker/60:0H-kblockd
+    377 ?        00:00:00 cpuhp/61
+    378 ?        00:00:00 idle_inject/61
+    379 ?        00:00:32 migration/61
+    380 ?        00:00:26 ksoftirqd/61
+    382 ?        00:00:00 kworker/61:0H-kblockd
+    383 ?        00:00:00 cpuhp/62
+    384 ?        00:00:00 idle_inject/62
+    385 ?        00:00:32 migration/62
+    386 ?        00:00:26 ksoftirqd/62
+    388 ?        00:00:00 kworker/62:0H-events_highpri
+    389 ?        00:00:00 cpuhp/63
+    390 ?        00:00:00 idle_inject/63
+    391 ?        00:00:32 migration/63
+    392 ?        00:00:27 ksoftirqd/63
+    394 ?        00:00:00 kworker/63:0H-kblockd
+    395 ?        00:00:00 kdevtmpfs
+    396 ?        00:00:00 netns
+    397 ?        00:00:00 rcu_tasks_kthre
+    398 ?        00:00:00 kauditd
+    402 ?        00:00:12 khungtaskd
+    403 ?        00:00:00 oom_reaper
+    404 ?        00:00:00 writeback
+    405 ?        00:00:00 kcompactd0
+    406 ?        00:00:00 kcompactd1
+    407 ?        00:00:00 ksmd
+    408 ?        00:00:00 khugepaged
+    455 ?        00:00:00 kintegrityd
+    456 ?        00:00:00 kblockd
+    457 ?        00:00:00 blkcg_punt_bio
+    462 ?        00:00:00 tpm_dev_wq
+    463 ?        00:00:00 ata_sff
+    464 ?        00:00:00 md
+    465 ?        00:00:00 edac-poller
+    466 ?        00:00:00 devfreq_wq
+    467 ?        00:00:00 watchdogd
+    472 ?        00:00:00 kswapd0
+    473 ?        00:00:00 kswapd1
+    474 ?        00:00:00 ecryptfs-kthrea
+    476 ?        00:00:00 kthrotld
+    477 ?        00:00:00 irq/37-pciehp
+    478 ?        00:00:00 acpi_thermal_pm
+    536 ?        00:00:00 vfio-irqfd-clea
+    542 ?        00:00:00 ipv6_addrconf
+    551 ?        00:00:00 kstrp
+    554 ?        00:00:00 kworker/u131:0
+    555 ?        00:00:00 kworker/u132:0
+    556 ?        00:00:00 kworker/u133:0
+    569 ?        00:00:00 charger_manager
+    699 ?        00:00:00 scsi_eh_0
+    700 ?        00:00:00 scsi_tmf_0
+    701 ?        00:00:00 scsi_eh_1
+    702 ?        00:00:00 scsi_tmf_1
+    704 ?        00:00:00 scsi_eh_2
+    705 ?        00:00:00 scsi_tmf_2
+    706 ?        00:00:00 scsi_eh_3
+    707 ?        00:00:00 scsi_tmf_3
+    708 ?        00:00:00 scsi_eh_4
+    709 ?        00:00:00 scsi_tmf_4
+    710 ?        00:00:00 scsi_eh_5
+    711 ?        00:00:00 scsi_tmf_5
+    712 ?        00:00:00 ixgbe
+    719 ?        00:00:00 scsi_eh_6
+    720 ?        00:00:00 scsi_tmf_6
+    721 ?        00:00:00 scsi_eh_7
+    722 ?        00:00:00 scsi_tmf_7
+    723 ?        00:00:00 scsi_eh_8
+    724 ?        00:00:00 scsi_tmf_8
+    725 ?        00:00:00 scsi_eh_9
+    726 ?        00:00:00 scsi_tmf_9
+    727 ?        00:00:00 scsi_eh_10
+    728 ?        00:00:00 scsi_tmf_10
+    729 ?        00:00:00 scsi_eh_11
+    730 ?        00:00:00 scsi_tmf_11
+    731 ?        00:00:00 scsi_eh_12
+    732 ?        00:00:00 scsi_tmf_12
+    733 ?        00:00:00 scsi_eh_13
+    734 ?        00:00:00 scsi_tmf_13
+    740 ?        00:00:03 kworker/11:1H-kblockd
+    743 ?        00:00:02 kworker/7:1H-kblockd
+    748 ?        00:00:02 kworker/44:1H-kblockd
+    749 ?        00:00:03 kworker/47:1H-kblockd
+    750 ?        00:00:02 kworker/10:1H-kblockd
+    751 ?        00:00:22 kworker/33:1H-kblockd
+    752 ?        00:00:03 kworker/38:1H-kblockd
+    756 ?        00:00:04 kworker/2:1H-kblockd
+    757 ?        00:00:04 kworker/3:1H-kblockd
+    758 ?        00:00:03 kworker/4:1H-kblockd
+    763 ?        00:08:07 md2_raid1
+    764 ?        00:00:08 md1_raid1
+    765 ?        00:00:01 md0_raid1
+    768 ?        00:00:03 kworker/16:1H-kblockd
+    770 ?        00:00:04 kworker/37:1H-kblockd
+    771 ?        00:00:04 kworker/41:1H-kblockd
+    773 ?        00:00:02 kworker/8:1H-kblockd
+    778 ?        00:31:40 md3_raid1
+    782 ?        00:00:03 kworker/14:1H-kblockd
+    809 ?        00:00:03 kworker/40:1H-kblockd
+    820 ?        00:00:00 raid5wq
+    852 ?        00:00:04 kworker/39:1H-kblockd
+    853 ?        00:00:02 kworker/6:1H-kblockd
+    854 ?        00:00:02 kworker/9:1H-kblockd
+    857 ?        00:00:02 kworker/12:1H-kblockd
+    859 ?        00:00:53 jbd2/md2-8
+    860 ?        00:00:00 ext4-rsv-conver
+    861 ?        00:00:06 kworker/1:1H-kblockd
+    872 ?        00:00:04 kworker/36:1H-kblockd
+    877 ?        00:00:05 kworker/35:1H-kblockd
+    883 ?        00:00:03 kworker/5:1H-kblockd
+    901 ?        00:00:02 kworker/45:1H-kblockd
+    906 ?        00:00:03 kworker/42:1H-kblockd
+    911 ?        00:43:48 systemd-journal
+    938 ?        00:00:03 kworker/0:1H-kblockd
+    944 ?        00:02:38 systemd-udevd
+   1089 ?        00:00:04 kworker/22:1H-kblockd
+   1090 ?        00:00:04 kworker/49:1H-kblockd
+   1092 ?        00:00:04 kworker/30:1H-kblockd
+   1093 ?        00:00:04 kworker/61:1H-kblockd
+   1094 ?        00:00:00 irq/197-mei_me
+   1098 ?        00:00:04 kworker/21:1H-kblockd
+   1099 ?        00:00:04 kworker/53:1H-kblockd
+   1104 ?        00:00:04 kworker/52:1H-kblockd
+   1108 ?        00:00:04 kworker/18:1H-kblockd
+   1117 ?        00:00:00 ttm_swap
+   1153 ?        00:00:00 cryptd
+   1162 ?        00:00:04 kworker/23:1H-kblockd
+   1181 ?        00:00:00 kipmi0
+   1188 ?        00:00:04 kworker/58:1H-kblockd
+   1189 ?        00:00:04 kworker/59:1H-kblockd
+   1199 ?        00:00:03 kworker/43:1H-kblockd
+   1223 ?        00:00:04 kworker/56:1H-kblockd
+   1284 ?        00:00:00 irq/57-1-0008
+   1292 ?        00:00:00 nv_queue
+   1293 ?        00:00:00 nv_queue
+   1304 ?        00:00:04 kworker/63:1H-kblockd
+   1305 ?        00:00:04 kworker/24:1H-kblockd
+   1306 ?        00:00:04 kworker/17:1H-kblockd
+   1308 ?        00:00:04 kworker/27:1H-kblockd
+   1309 ?        00:00:04 kworker/29:1H-kblockd
+   1310 ?        00:00:04 kworker/50:1H-kblockd
+   1312 ?        00:00:00 mdadm
+   1327 ?        00:00:02 kworker/32:1H-kblockd
+   1334 ?        00:00:05 kworker/34:1H-kblockd
+   1337 ?        00:00:03 kworker/15:1H-kblockd
+   1357 ?        00:00:04 kworker/54:1H-kblockd
+   1381 ?        00:00:04 kworker/51:1H-kblockd
+   1415 ?        00:00:00 irq/58-2-0008
+   1419 ?        00:00:00 irq/60-3-0008
+   1421 ?        00:00:00 irq/62-4-0008
+   1425 ?        00:00:00 jbd2/md0-8
+   1426 ?        00:00:00 ext4-rsv-conver
+   1428 ?        00:00:47 jbd2/md3-8
+   1430 ?        00:00:00 ext4-rsv-conver
+   1468 ?        00:00:11 kworker/46:1H-kblockd
+   1475 ?        00:00:00 none
+   1478 ?        00:00:03 kworker/13:1H-kblockd
+   1498 ?        00:00:03 systemd-network
+   1499 ?        00:00:00 irq/63-5-0008
+   1504 ?        00:00:46 accounts-daemon
+   1505 ?        00:00:00 acpid
+   1508 ?        00:00:15 avahi-daemon
+   1512 ?        03:21:36 dbus-daemon
+   1515 ?        02:29:55 NetworkManager
+   1516 ?        00:00:00 nvidia-modeset/
+   1517 ?        00:00:00 nvidia-modeset/
+   1519 ?        00:00:00 nfit
+   1522 ?        00:00:00 avahi-daemon
+   1553 ?        00:03:03 irqbalance
+   1582 ?        10:19:08 polkitd
+   1588 ?        00:03:51 rsyslogd
+   1589 ?        00:01:41 nscd
+   1593 ?        00:00:14 nvidia-persiste
+   1594 ?        00:00:00 switcheroo-cont
+   1606 ?        00:01:14 systemd-logind
+   1612 ?        00:01:26 systemd-resolve
+   1613 ?        00:02:09 irq/217-nvidia
+   1614 ?        00:00:00 nvidia
+   1615 ?        00:01:40 nv_queue
+   1616 ?        00:04:19 udisksd
+   1617 ?        00:00:01 wpa_supplicant
+   1623 ?        00:00:04 kworker/55:1H-kblockd
+   1632 ?        00:00:12 ModemManager
+   1642 ?        00:00:04 kworker/60:1H-kblockd
+   1669 ?        00:00:04 kworker/57:1H-kblockd
+   1682 ?        00:00:04 kworker/19:1H-kblockd
+   1733 ?        00:00:00 zabbix_agentd
+   1734 ?        00:00:09 sshd
+   1735 ?        00:03:17 zabbix_agentd
+   1736 ?        00:01:38 zabbix_agentd
+   1737 ?        00:01:37 zabbix_agentd
+   1738 ?        00:01:41 zabbix_agentd
+   1739 ?        00:01:38 zabbix_agentd
+   1740 ?        00:01:41 zabbix_agentd
+   1741 ?        00:01:42 zabbix_agentd
+   1742 ?        00:01:36 zabbix_agentd
+   1743 ?        00:01:40 zabbix_agentd
+   1744 ?        00:01:36 zabbix_agentd
+   1745 ?        00:01:37 zabbix_agentd
+   1746 ?        00:00:21 zabbix_agentd
+   1747 ?        00:00:16 zabbix_agentd
+   1748 ?        00:00:17 zabbix_agentd
+   1751 ?        00:00:03 kworker/48:1H-kblockd
+   1754 ?        00:05:28 containerd
+   1755 ?        00:00:00 afs_pagecopy
+   1758 ?        00:00:00 afsd
+   1767 ?        00:00:04 afs_rxevent
+   1768 ?        00:00:06 afs_rxlistener
+   1769 ?        00:00:00 afs_rxproc
+   1771 ?        00:00:00 yfs_cellprobe
+   1772 ?        00:00:01 afs_checkserver
+   1773 ?        00:00:01 afs_truncate
+   1774 ?        00:00:13 afs_daemon
+   1782 ?        00:00:04 kworker/31:1H-kblockd
+   1818 ?        00:00:04 kworker/25:1H-kblockd
+   1860 ?        00:03:29 irq/218-nvidia
+   1861 ?        00:00:00 nvidia
+   1862 ?        00:02:38 nv_queue
+   1879 ?        00:03:25 irq/219-nvidia
+   1880 ?        00:00:00 nvidia
+   1881 ?        00:02:38 nv_queue
+   1925 ?        00:04:02 irq/220-nvidia
+   1926 ?        00:00:00 nvidia
+   1927 ?        00:05:04 nv_queue
+   1947 ?        00:00:04 kworker/20:1H-kblockd
+   1948 ?        00:00:04 kworker/26:1H-kblockd
+   1949 ?        00:00:04 kworker/62:1H-kblockd
+   1950 ?        00:00:04 kworker/28:1H-kblockd
+   1970 ?        00:03:04 irq/221-nvidia
+   1971 ?        00:00:00 nvidia
+   1972 ?        00:02:00 nv_queue
+   1990 ?        00:02:58 dockerd
+   2002 ?        00:00:09 whoopsie
+   2010 ?        00:00:23 kerneloops
+   2016 ?        00:00:24 kerneloops
+   2049 ?        00:00:57 nslcd
+   2056 ?        00:00:00 cron
+   2079 ?        00:00:00 gdm3
+   2089 ?        00:00:00 gdm-session-wor
+   2154 ?        00:00:27 systemd
+   2163 ?        00:00:00 (sd-pam)
+   2199 ?        00:00:07 pulseaudio
+   2214 tty1     00:00:00 gdm-x-session
+   2222 tty1     09:48:42 Xorg
+   2236 ?        00:00:04 rtkit-daemon
+   2498 tty1     00:00:00 dbus-daemon
+   2509 tty1     00:00:00 dbus-run-sessio
+   2510 tty1     00:00:00 dbus-daemon
+   2513 tty1     00:00:11 gnome-session-b
+   2540 tty1     00:00:00 at-spi-bus-laun
+   2549 tty1     00:00:00 dbus-daemon
+   2869 tty1     00:00:00 at-spi2-registr
+   2923 tty1     00:00:00 xdg-permission-
+   2969 ?        00:00:06 upowerd
+   3024 tty1     00:00:19 gsd-sharing
+   3027 tty1     00:00:00 gsd-wacom
+   3029 tty1     00:00:01 gsd-color
+   3032 tty1     00:00:00 gsd-keyboard
+   3039 tty1     00:00:00 gsd-print-notif
+   3043 tty1     00:00:07 gsd-rfkill
+   3046 tty1     00:00:00 gsd-smartcard
+   3047 tty1     00:00:00 gsd-datetime
+   3049 tty1     00:00:05 gsd-media-keys
+   3052 tty1     00:00:00 gsd-screensaver
+   3058 tty1     00:00:00 gsd-sound
+   3063 tty1     00:00:00 gsd-a11y-settin
+   3067 tty1     00:00:46 gsd-housekeepin
+   3070 tty1     00:00:06 gsd-power
+   3114 tty1     00:00:00 gsd-printer
+   3123 ?        00:00:00 colord
+   3373 ?        00:00:01 master
+   3375 ?        00:00:00 qmgr
+   3866 ?        00:00:26 systemd
+   3868 ?        00:00:00 (sd-pam)
+   4026 ?        00:00:00 agent
+   4735 ?        00:00:26 systemd
+   4748 ?        00:00:00 (sd-pam)
+   4923 ?        00:00:00 agent
+   5035 ?        00:00:27 systemd
+   5040 ?        00:00:00 (sd-pam)
+   5218 ?        00:00:00 agent
+   5336 ?        00:00:27 systemd
+   5347 ?        00:00:00 (sd-pam)
+   5532 ?        00:00:00 agent
+   5572 ?        00:00:27 systemd
+   5574 ?        00:00:00 (sd-pam)
+   5741 ?        00:00:00 agent
+   6203 ?        00:00:27 systemd
+   6245 ?        00:00:00 (sd-pam)
+   6500 ?        00:00:00 agent
+   6637 ?        00:00:26 systemd
+   6649 ?        00:00:00 (sd-pam)
+   6677 ?        00:00:00 agent
+   7024 ?        00:00:00 agent
+   7124 ?        00:00:26 systemd
+   7169 ?        00:00:00 (sd-pam)
+   7482 ?        00:00:00 agent
+   7507 ?        00:00:00 agent
+   7853 ?        00:00:26 systemd
+   7856 ?        00:00:00 (sd-pam)
+   8014 ?        00:00:00 agent
+   8427 ?        00:00:26 systemd
+   8629 ?        00:00:00 agent
+   8748 ?        00:00:26 systemd
+   8755 ?        00:00:00 (sd-pam)
+   8978 ?        00:00:00 agent
+   9113 ?        00:00:27 systemd
+   9117 ?        00:00:00 (sd-pam)
+   9282 ?        00:00:00 agent
+   9401 ?        00:00:27 systemd
+   9418 ?        00:00:00 (sd-pam)
+   9590 ?        00:00:00 agent
+   9628 ?        00:00:27 systemd
+   9630 ?        00:00:00 (sd-pam)
+   9792 ?        00:00:00 agent
+  10158 ?        00:00:27 systemd
+  10197 ?        00:00:00 (sd-pam)
+  10387 ?        00:00:00 agent
+  10506 ?        00:00:27 systemd
+  10513 ?        00:00:00 (sd-pam)
+  10688 ?        00:00:00 agent
+  10768 ?        00:00:27 systemd
+  10813 ?        00:00:00 (sd-pam)
+  10989 ?        00:00:00 agent
+  11105 ?        00:00:27 systemd
+  11122 ?        00:00:00 (sd-pam)
+  11290 ?        00:00:00 agent
+  11333 ?        00:00:27 systemd
+  11337 ?        00:00:00 (sd-pam)
+  11499 ?        00:00:00 agent
+  11933 ?        00:00:27 systemd
+  11938 ?        00:00:00 (sd-pam)
+  12113 ?        00:00:00 agent
+  12236 ?        00:00:27 systemd
+  12249 ?        00:00:00 (sd-pam)
+  12415 ?        00:00:00 agent
+  12539 ?        00:00:27 systemd
+  12551 ?        00:00:00 (sd-pam)
+  12718 ?        00:00:00 agent
+  12833 ?        00:00:27 systemd
+  12839 ?        00:00:00 (sd-pam)
+  13019 ?        00:00:00 agent
+  13062 ?        00:00:27 systemd
+  13067 ?        00:00:00 (sd-pam)
+  13231 ?        00:00:00 agent
+  13614 ?        00:00:27 systemd
+  13655 ?        00:00:00 (sd-pam)
+  13850 ?        00:00:00 agent
+  13965 ?        00:00:27 systemd
+  13971 ?        00:00:00 (sd-pam)
+  14160 ?        00:00:00 agent
+  14276 ?        00:00:27 systemd
+  14286 ?        00:00:00 (sd-pam)
+  14468 ?        00:00:00 agent
+  14546 ?        00:00:27 systemd
+  14587 ?        00:00:00 (sd-pam)
+  14774 ?        00:00:00 agent
+  14817 ?        00:00:27 systemd
+  14819 ?        00:00:00 (sd-pam)
+  14985 ?        00:00:00 agent
+  15410 ?        00:00:27 systemd
+  15418 ?        00:00:00 (sd-pam)
+  15582 ?        00:00:00 agent
+  15707 ?        00:00:27 systemd
+  15720 ?        00:00:00 (sd-pam)
+  15888 ?        00:00:00 agent
+  16011 ?        00:00:27 systemd
+  16026 ?        00:00:00 (sd-pam)
+  16194 ?        00:00:00 agent
+  16310 ?        00:00:26 systemd
+  16325 ?        00:00:00 (sd-pam)
+  16503 ?        00:00:00 agent
+  16544 ?        00:00:27 systemd
+  16546 ?        00:00:00 (sd-pam)
+  16709 ?        00:00:00 agent
+  17134 ?        00:00:27 systemd
+  17148 ?        00:00:00 (sd-pam)
+  17314 ?        00:00:00 agent
+  17439 ?        00:00:27 systemd
+  17442 ?        00:00:00 (sd-pam)
+  17557 ?        00:00:00 uuidd
+  17612 ?        00:00:00 agent
+  17729 ?        00:00:26 systemd
+  17741 ?        00:00:00 (sd-pam)
+  18388 ?        00:00:00 agent
+  18512 ?        00:00:26 systemd
+  18556 ?        00:00:00 (sd-pam)
+  19056 ?        00:00:00 agent
+  19111 ?        00:00:27 systemd
+  19113 ?        00:00:00 (sd-pam)
+  19313 ?        00:00:00 agent
+  22562 ?        00:00:00 UVM global queu
+  22563 ?        00:00:00 UVM deferred re
+  22565 ?        00:00:00 UVM Tools Event
+  50937 ?        00:00:00 agent
+ 124853 ?        00:00:00 ssh-agent
+ 147597 ?        00:04:51 gnome-terminal-
+ 147639 pts/174  00:00:00 bash
+ 173587 pts/175  00:00:00 bash
+ 212781 pts/175  00:01:03 roscore
+ 212955 ?        00:14:05 rosmaster
+ 213044 ?        00:00:47 rosout
+ 213607 pts/176  00:00:00 bash
+ 238133 ?        00:03:02 code
+ 238893 ?        00:00:10 code
+ 239161 ?        00:00:01 code
+ 254568 ?        00:00:00 agent
+ 255405 ?        00:00:00 agent
+ 271708 ?        00:00:26 systemd
+ 271711 ?        00:00:00 (sd-pam)
+ 272070 ?        00:00:00 agent
+ 274806 ?        00:00:00 agent
+ 279961 ?        00:00:00 agent
+ 287228 ?        00:04:40 tmux: server
+ 287229 pts/116  00:00:00 bash
+ 294926 pts/136  00:00:00 bash
+ 297564 ?        00:00:30 tmux: server
+ 297755 pts/60   00:00:00 bash
+ 297778 ?        00:00:00 agent
+ 301033 ?        00:00:00 agent
+ 301631 ?        00:00:00 agent
+ 310492 ?        00:00:00 agent
+ 327470 pts/102  00:00:00 bash
+ 349325 pts/186  00:00:00 bash
+ 352203 ?        00:00:00 kworker/u128:1-ixgbe
+ 425168 ?        00:05:57 rosout
+ 459023 ?        00:00:43 gnome-terminal-
+ 459088 pts/4    00:00:00 bash
+ 461401 ?        00:00:00 agent
+ 462479 ?        00:00:00 agent
+ 467415 pts/114  00:00:00 bash
+ 477134 ?        00:01:41 code
+ 477143 ?        00:00:00 code
+ 477144 ?        00:00:00 code
+ 477149 ?        00:00:00 code
+ 477207 ?        00:15:59 code
+ 477216 ?        00:00:00 code
+ 477267 ?        00:15:32 code
+ 477488 ?        00:00:23 code
+ 477536 ?        00:00:12 code
+ 477602 ?        00:00:01 code
+ 488066 pts/179  00:00:00 bash
+ 495526 pts/31   00:00:00 bash
+ 497939 pts/127  00:00:00 bash
+ 525620 ?        00:04:13 gnome-terminal-
+ 525628 ?        00:00:00 gvfsd
+ 525640 ?        00:00:00 gvfsd-fuse
+ 525697 ?        00:00:03 xdg-desktop-por
+ 525712 ?        00:00:00 xdg-document-po
+ 525719 ?        00:00:00 xdg-permission-
+ 525748 ?        00:00:00 xdg-desktop-por
+ 525762 ?        00:00:00 dconf-service
+ 525769 ?        00:00:00 gnome-keyring-d
+ 525787 pts/112  00:00:00 bash
+ 570056 pts/159  00:00:00 bash
+ 576002 ?        00:00:00 agent
+ 738949 pts/185  00:00:00 bash
+ 743043 ?        00:00:00 sh
+ 743059 ?        00:00:33 node
+ 743135 ?        00:00:29 node
+ 743406 ?        00:00:00 sshd
+ 744043 ?        00:00:09 sshd
+ 744050 ?        00:00:00 bash
+ 744068 ?        00:00:00 bash
+ 749400 ?        00:08:03 node
+ 749442 ?        00:00:04 node
+ 750068 pts/193  00:00:00 bash
+ 764701 ?        00:04:31 tmux: server
+ 764702 pts/82   00:00:00 bash
+ 765288 pts/83   00:00:00 bash
+ 767073 pts/84   00:00:00 bash
+ 800948 ?        00:01:37 code
+ 801233 ?        00:00:09 code
+ 801420 ?        00:00:01 code
+ 813228 ?        00:01:06 gnome-terminal-
+ 813295 pts/17   00:00:00 bash
+ 822085 ?        00:02:07 code
+ 822195 ?        00:00:00 code
+ 822197 ?        00:00:00 code
+ 822289 ?        00:00:00 code
+ 822387 ?        00:16:27 code
+ 822404 ?        00:00:00 code
+ 822431 ?        00:20:40 code
+ 823014 ?        00:00:24 code
+ 823111 ?        00:00:08 code
+ 823180 ?        00:00:01 code
+ 823238 ?        00:00:01 code
+ 827415 pts/122  00:00:02 roslaunch
+ 827736 ?        00:00:00 gzclient <defunct>
+ 827775 ?        00:09:42 python3 <defunct>
+ 877903 pts/122  00:00:02 roslaunch
+ 878153 ?        00:00:00 gzclient <defunct>
+ 878191 ?        00:21:16 python3 <defunct>
+ 878195 ?        00:04:39 python3 <defunct>
+ 915423 ?        00:00:00 sh
+ 915433 ?        00:00:27 node
+ 915493 ?        00:00:02 node
+ 943148 ?        00:01:34 rosout
+ 963603 ?        00:00:00 agent
+ 978310 pts/68   00:00:00 bash
+ 986849 ?        00:00:26 systemd
+ 986857 ?        00:00:00 (sd-pam)
+ 987192 ?        00:00:00 agent
+ 988078 ?        00:00:26 systemd
+ 988081 ?        00:00:00 (sd-pam)
+ 988354 ?        00:00:00 agent
+ 990262 ?        00:00:26 systemd
+ 990265 ?        00:00:00 (sd-pam)
+ 990604 ?        00:00:00 agent
+ 991105 ?        00:00:25 systemd
+ 991107 ?        00:00:00 (sd-pam)
+ 991538 ?        00:00:00 agent
+ 992462 ?        00:00:00 agent
+ 997472 ?        00:00:25 systemd
+ 997474 ?        00:00:00 (sd-pam)
+ 997644 ?        00:00:00 agent
+ 999528 ?        00:00:25 systemd
+ 999531 ?        00:00:00 (sd-pam)
+ 999731 ?        00:00:00 agent
+1002022 ?        00:00:25 systemd
+1002024 ?        00:00:00 (sd-pam)
+1002216 ?        00:00:00 agent
+1017240 ?        00:00:32 code
+1017248 ?        00:00:00 code
+1017249 ?        00:00:00 code
+1017253 ?        00:00:00 code
+1017302 ?        00:07:12 code
+1017323 ?        00:00:00 code
+1017387 ?        00:06:39 code
+1017606 ?        00:00:09 code
+1017647 ?        00:00:24 code
+1017675 ?        00:00:02 code
+1017696 ?        00:00:01 code
+1020708 ?        00:02:21 code
+1022276 ?        00:00:00 sshd
+1022523 ?        00:00:03 systemd
+1022526 ?        00:00:00 (sd-pam)
+1022561 ?        00:00:00 sshd
+1022571 pts/144  00:00:00 bash
+1055130 ?        00:01:09 gnome-terminal-
+1055177 pts/25   00:00:00 bash
+1055234 pts/39   00:00:01 bash
+1082180 pts/20   00:00:00 bash
+1138266 pts/25   00:03:25 gedit
+1152772 pts/76   00:00:00 bash
+1163362 ?        00:08:16 code
+1169916 pts/122  00:00:01 roslaunch
+1170207 ?        00:00:00 gzclient <defunct>
+1170241 ?        00:06:09 python3 <defunct>
+1194014 ?        00:00:00 sh
+1194032 ?        00:00:36 node
+1194333 ?        00:00:44 node
+1195249 pts/122  00:00:01 roslaunch
+1195650 ?        00:00:00 gzclient <defunct>
+1195679 ?        00:06:23 python3 <defunct>
+1211360 pts/190  00:00:00 bash
+1215101 pts/12   00:00:00 bash
+1245105 ?        00:00:00 git-credential-
+1266027 ?        00:00:00 agent
+1266488 ?        00:00:00 agent
+1266737 ?        00:00:00 agent
+1266987 ?        00:00:00 agent
+1267541 ?        03:02:47 Xvnc
+1267586 ?        00:00:07 openbox
+1267609 ?        00:00:30 tint2
+1267628 ?        00:00:00 applet.py
+1267634 ?        00:00:00 agent
+1267643 ?        00:00:00 at-spi-bus-laun
+1267656 ?        00:00:00 dbus-launch
+1267666 ?        00:00:00 dbus-daemon
+1267735 ?        02:53:33 Xvnc
+1267783 ?        00:00:25 openbox
+1267806 ?        00:00:32 tint2
+1267821 ?        00:00:04 update-notifier
+1267825 ?        00:00:00 applet.py
+1267836 ?        00:00:00 agent
+1267839 ?        00:00:16 nm-applet
+1267842 ?        00:00:00 at-spi-bus-laun
+1267853 ?        00:00:00 dbus-launch
+1267863 ?        00:00:00 dbus-daemon
+1267868 ?        00:00:02 dbus-daemon
+1267964 ?        00:00:12 at-spi2-registr
+1268021 ?        01:38:50 Xvnc
+1268064 ?        00:00:00 dbus-daemon
+1268073 ?        00:00:03 openbox
+1268093 ?        00:00:23 tint2
+1268108 ?        00:00:03 update-notifier
+1268112 ?        00:00:00 applet.py
+1268118 ?        00:00:00 agent
+1268122 ?        00:00:15 nm-applet
+1268143 ?        00:00:00 dbus-launch
+1268153 ?        00:00:00 dbus-daemon
+1268249 ?        00:00:00 at-spi-bus-laun
+1268258 ?        00:00:00 dbus-daemon
+1268269 ?        00:00:03 at-spi2-registr
+1268322 ?        00:00:13 Xvnc
+1268373 ?        00:00:00 openbox
+1268393 ?        00:00:17 tint2
+1268407 ?        00:00:03 update-notifier
+1268412 ?        00:00:00 applet.py
+1268416 ?        00:00:00 agent
+1268418 ?        00:00:14 nm-applet
+1268445 ?        00:00:00 dbus-launch
+1268450 ?        00:00:00 dbus-daemon
+1268501 ?        00:00:00 at-spi-bus-laun
+1268542 ?        00:00:00 dbus-daemon
+1268556 ?        00:00:00 at-spi2-registr
+1268621 ?        01:42:21 Xvnc
+1268675 ?        00:00:08 openbox
+1268698 ?        00:00:27 tint2
+1268711 ?        00:00:03 update-notifier
+1268719 ?        00:00:00 applet.py
+1268730 ?        00:00:00 agent
+1268738 ?        00:00:15 nm-applet
+1268740 ?        00:00:00 at-spi-bus-laun
+1268745 ?        00:00:00 dbus-launch
+1268755 ?        00:00:00 dbus-daemon
+1268761 ?        00:00:01 dbus-daemon
+1268859 ?        00:00:07 at-spi2-registr
+1268916 ?        01:12:36 Xvnc
+1268968 ?        00:00:05 openbox
+1268988 ?        00:00:22 tint2
+1269003 ?        00:00:03 update-notifier
+1269007 ?        00:00:00 applet.py
+1269014 ?        00:00:00 agent
+1269022 ?        00:00:14 nm-applet
+1269028 ?        00:00:00 dbus-launch
+1269045 ?        00:00:00 dbus-daemon
+1269136 ?        00:00:00 at-spi-bus-laun
+1269146 ?        00:00:01 dbus-daemon
+1269160 ?        00:00:08 at-spi2-registr
+1269216 ?        02:22:55 Xvnc
+1269266 ?        00:00:13 openbox
+1269289 ?        00:00:34 tint2
+1269305 ?        00:00:03 update-notifier
+1269312 ?        00:00:00 applet.py
+1269321 ?        00:00:00 agent
+1269324 ?        00:00:16 nm-applet
+1269331 ?        00:00:00 dbus-launch
+1269334 ?        00:00:00 at-spi-bus-laun
+1269343 ?        00:00:00 dbus-daemon
+1269352 ?        00:00:02 dbus-daemon
+1269451 ?        00:00:12 at-spi2-registr
+1269529 ?        03:14:11 Xvnc
+1269578 ?        00:00:11 openbox
+1269599 ?        00:00:24 tint2
+1269614 ?        00:00:03 update-notifier
+1269618 ?        00:00:00 applet.py
+1269624 ?        00:00:00 agent
+1269629 ?        00:00:15 nm-applet
+1269633 ?        00:00:00 at-spi-bus-laun
+1269655 ?        00:00:00 dbus-launch
+1269659 ?        00:00:00 dbus-daemon
+1269665 ?        00:00:00 dbus-daemon
+1269768 ?        00:00:03 at-spi2-registr
+1269829 ?        01:04:16 Xvnc
+1269884 ?        00:00:08 openbox
+1269905 ?        00:00:28 tint2
+1269919 ?        00:00:03 update-notifier
+1269924 ?        00:00:00 applet.py
+1269931 ?        00:00:00 agent
+1269934 ?        00:00:15 nm-applet
+1269957 ?        00:00:00 dbus-launch
+1269962 ?        00:00:00 dbus-daemon
+1270053 ?        00:00:00 at-spi-bus-laun
+1270064 ?        00:00:01 dbus-daemon
+1270078 ?        00:00:04 at-spi2-registr
+1270131 ?        06:59:20 Xvnc
+1270212 ?        00:00:22 openbox
+1270237 ?        00:01:02 tint2
+1270260 ?        00:00:04 update-notifier
+1270264 ?        00:00:00 applet.py
+1270268 ?        00:00:00 agent
+1270273 ?        00:00:16 nm-applet
+1270298 ?        00:00:00 dbus-launch
+1270303 ?        00:00:00 dbus-daemon
+1270393 ?        00:00:00 at-spi-bus-laun
+1270406 ?        00:00:02 dbus-daemon
+1270415 ?        00:00:15 at-spi2-registr
+1270491 ?        02:31:19 Xvnc
+1270549 ?        00:00:08 openbox
+1270575 ?        00:00:27 tint2
+1270590 ?        00:00:03 update-notifier
+1270594 ?        00:00:00 applet.py
+1270601 ?        00:00:00 agent
+1270604 ?        00:00:16 nm-applet
+1270613 ?        00:00:00 at-spi-bus-laun
+1270620 ?        00:00:00 dbus-launch
+1270630 ?        00:00:00 dbus-daemon
+1270637 ?        00:00:01 dbus-daemon
+1270733 ?        00:00:07 at-spi2-registr
+1270801 ?        06:08:46 Xvnc
+1270858 ?        00:00:14 openbox
+1270878 ?        00:00:33 tint2
+1270893 ?        00:00:04 update-notifier
+1270897 ?        00:00:00 applet.py
+1270904 ?        00:00:00 agent
+1270908 ?        00:00:16 nm-applet
+1270915 ?        00:00:00 at-spi-bus-laun
+1270927 ?        00:00:00 dbus-launch
+1270934 ?        00:00:00 dbus-daemon
+1270941 ?        00:00:01 dbus-daemon
+1271032 ?        00:00:06 at-spi2-registr
+1271104 ?        01:13:50 Xvnc
+1271159 ?        00:00:06 openbox
+1271179 ?        00:00:25 tint2
+1271192 ?        00:00:03 update-notifier
+1271198 ?        00:00:00 applet.py
+1271202 ?        00:00:00 agent
+1271206 ?        00:00:15 nm-applet
+1271215 ?        00:00:00 at-spi-bus-laun
+1271225 ?        00:00:00 dbus-launch
+1271236 ?        00:00:00 dbus-daemon
+1271243 ?        00:00:01 dbus-daemon
+1271327 ?        00:00:09 at-spi2-registr
+1271400 ?        00:00:00 Xvnc
+1271472 ?        00:00:00 openbox
+1271501 ?        00:00:18 tint2
+1271516 ?        00:00:03 update-notifier
+1271523 ?        00:00:00 applet.py
+1271527 ?        00:00:00 agent
+1271529 ?        00:00:15 nm-applet
+1271555 ?        00:00:00 dbus-launch
+1271564 ?        00:00:00 dbus-daemon
+1271669 ?        00:00:00 at-spi-bus-laun
+1271675 ?        00:00:00 dbus-daemon
+1271686 ?        00:00:00 at-spi2-registr
+1271736 ?        02:26:29 Xvnc
+1271789 ?        00:00:20 openbox
+1271818 ?        00:00:35 tint2
+1271835 ?        00:00:03 update-notifier
+1271839 ?        00:00:02 applet.py
+1271847 ?        00:00:00 agent
+1271849 ?        00:00:16 nm-applet
+1271868 ?        00:00:00 dbus-launch
+1271879 ?        00:00:01 dbus-daemon
+1271979 ?        00:00:00 at-spi-bus-laun
+1271990 ?        00:00:01 dbus-daemon
+1272004 ?        00:00:15 at-spi2-registr
+1272057 ?        03:59:31 Xvnc
+1272151 ?        00:00:29 code
+1272154 ?        00:00:00 code
+1272155 ?        00:00:00 code
+1272157 ?        00:00:00 code
+1272216 ?        00:00:08 openbox
+1272255 ?        00:00:24 tint2
+1272271 ?        00:00:03 update-notifier
+1272275 ?        00:00:00 applet.py
+1272280 ?        00:00:00 agent
+1272284 ?        00:00:16 nm-applet
+1272293 ?        00:00:00 at-spi-bus-laun
+1272306 ?        00:00:00 dbus-launch
+1272313 ?        00:00:00 dbus-daemon
+1272319 ?        00:00:00 dbus-daemon
+1272358 ?        00:00:01 code
+1272425 ?        00:01:42 code
+1272468 ?        00:00:03 at-spi2-registr
+1272499 ?        00:00:00 code
+1272509 ?        00:08:44 code
+1272563 ?        03:08:48 Xvnc
+1272640 ?        00:06:37 code
+1272672 ?        00:00:26 openbox
+1272695 ?        00:00:46 tint2
+1272712 ?        00:00:04 update-notifier
+1272719 ?        00:00:00 applet.py
+1272723 ?        00:00:00 dbus-launch
+1272731 ?        00:00:43 code
+1272732 ?        00:00:00 agent
+1272734 ?        00:00:16 nm-applet
+1272736 ?        00:00:01 dbus-daemon
+1272739 ?        00:00:00 at-spi-bus-laun
+1272759 ?        00:00:02 dbus-daemon
+1272861 ?        00:00:08 at-spi2-registr
+1272899 ?        00:00:04 code
+1272962 ?        00:00:05 code
+1273034 ?        01:57:30 Xvnc
+1273103 ?        00:00:15 openbox
+1273143 ?        00:00:34 tint2
+1273160 ?        00:00:03 update-notifier
+1273171 ?        00:00:01 applet.py
+1273175 ?        00:00:00 agent
+1273178 ?        00:00:16 nm-applet
+1273186 ?        00:00:00 dbus-launch
+1273208 ?        00:00:01 dbus-daemon
+1273312 ?        00:00:00 at-spi-bus-laun
+1273315 ?        00:00:00 sh
+1273321 ?        00:12:02 vsls-agent
+1273324 ?        00:00:01 dbus-daemon
+1273336 ?        00:00:11 at-spi2-registr
+1273465 ?        02:07:30 Xvnc
+1273531 ?        00:28:52 code
+1273555 ?        00:00:16 openbox
+1273575 ?        00:00:37 tint2
+1273590 ?        00:00:03 update-notifier
+1273595 ?        00:00:01 applet.py
+1273608 ?        00:00:00 agent
+1273610 ?        00:00:16 nm-applet
+1273617 ?        00:00:00 at-spi-bus-laun
+1273624 ?        00:00:00 dbus-launch
+1273632 ?        00:00:01 dbus-daemon
+1273639 ?        00:00:01 dbus-daemon
+1273719 ?        00:00:09 at-spi2-registr
+1273802 ?        03:13:07 Xvnc
+1273920 ?        00:00:06 openbox
+1273940 ?        00:00:25 tint2
+1273956 ?        00:00:03 update-notifier
+1273963 ?        00:00:00 applet.py
+1273968 ?        00:00:00 agent
+1273970 ?        00:00:16 nm-applet
+1273974 ?        00:00:00 at-spi-bus-laun
+1273975 ?        00:00:00 dbus-launch
+1273997 ?        00:00:00 dbus-daemon
+1274003 ?        00:00:00 dbus-daemon
+1274100 ?        00:00:01 at-spi2-registr
+1274172 ?        00:00:00 Xvnc
+1274232 ?        00:00:00 openbox
+1274252 ?        00:00:17 tint2
+1274267 ?        00:00:03 update-notifier
+1274271 ?        00:00:00 applet.py
+1274281 ?        00:00:00 agent
+1274285 ?        00:00:14 nm-applet
+1274305 ?        00:00:00 dbus-launch
+1274313 ?        00:00:00 dbus-daemon
+1274409 ?        00:00:00 at-spi-bus-laun
+1274417 ?        00:00:00 dbus-daemon
+1274431 ?        00:00:00 at-spi2-registr
+1274508 ?        05:05:21 Xvnc
+1274556 ?        00:00:24 openbox
+1274581 ?        00:00:39 tint2
+1274597 ?        00:00:03 update-notifier
+1274604 ?        00:00:00 applet.py
+1274609 ?        00:00:00 agent
+1274615 ?        00:00:16 nm-applet
+1274623 ?        00:00:00 at-spi-bus-laun
+1274627 ?        00:00:00 dbus-launch
+1274634 ?        00:00:01 dbus-daemon
+1274645 ?        00:00:02 dbus-daemon
+1274729 ?        00:00:25 at-spi2-registr
+1274779 ?        00:00:00 gvfsd
+1274792 ?        00:00:00 gvfsd-fuse
+1274817 ?        00:00:06 xdg-desktop-por
+1274822 ?        00:00:00 xdg-document-po
+1274826 ?        00:00:00 xdg-permission-
+1274842 ?        00:00:00 xdg-desktop-por
+1274853 ?        00:00:06 at-spi2-registr
+1274857 ?        00:00:00 dconf-service
+1274904 ?        00:00:00 gnome-keyring-d
+1275014 ?        00:00:00 agent
+1275205 ?        01:50:30 Xvnc
+1275261 ?        00:00:06 openbox
+1275281 ?        00:00:25 tint2
+1275296 ?        00:00:03 update-notifier
+1275300 ?        00:00:00 applet.py
+1275310 ?        00:00:00 agent
+1275315 ?        00:00:15 nm-applet
+1275318 ?        00:00:00 at-spi-bus-laun
+1275329 ?        00:00:00 dbus-launch
+1275341 ?        00:00:00 dbus-daemon
+1275347 ?        00:00:01 dbus-daemon
+1275431 ?        00:00:10 at-spi2-registr
+1275498 ?        00:51:32 Xvnc
+1275551 ?        00:00:10 openbox
+1275574 ?        00:00:26 tint2
+1275593 ?        00:00:01 applet.py
+1275597 ?        00:00:00 agent
+1275604 ?        00:00:00 at-spi-bus-laun
+1275626 ?        00:00:00 dbus-launch
+1275631 ?        00:00:00 dbus-daemon
+1275709 ?        03:16:53 Xvnc
+1275763 ?        00:00:15 openbox
+1275783 ?        00:00:51 tint2
+1275798 ?        00:00:03 update-notifier
+1275802 ?        00:00:01 applet.py
+1275807 ?        00:00:00 agent
+1275811 ?        00:00:16 nm-applet
+1275834 ?        00:00:00 dbus-launch
+1275844 ?        00:00:03 dbus-daemon
+1275929 ?        00:00:00 at-spi-bus-laun
+1275934 ?        00:00:01 dbus-daemon
+1275952 ?        00:00:05 at-spi2-registr
+1276057 ?        00:00:01 dbus-daemon
+1276304 ?        00:30:01 Xvnc
+1276360 ?        00:00:03 openbox
+1276380 ?        00:00:20 tint2
+1276395 ?        00:00:03 update-notifier
+1276399 ?        00:00:00 applet.py
+1276403 ?        00:00:00 agent
+1276414 ?        00:00:15 nm-applet
+1276419 ?        00:00:00 at-spi-bus-laun
+1276432 ?        00:00:00 dbus-launch
+1276437 ?        00:00:00 dbus-daemon
+1276443 ?        00:00:00 dbus-daemon
+1276529 ?        00:00:01 at-spi2-registr
+1276592 ?        00:24:07 Xvnc
+1276648 ?        00:00:02 openbox
+1276671 ?        00:00:19 tint2
+1276686 ?        00:00:03 update-notifier
+1276691 ?        00:00:00 applet.py
+1276695 ?        00:00:00 agent
+1276697 ?        00:00:15 nm-applet
+1276700 ?        00:00:00 at-spi-bus-laun
+1276725 ?        00:00:00 dbus-launch
+1276728 ?        00:00:00 dbus-daemon
+1276734 ?        00:00:00 dbus-daemon
+1276818 ?        00:00:02 at-spi2-registr
+1276884 ?        02:55:02 Xvnc
+1276937 ?        00:00:19 openbox
+1276957 ?        00:00:39 tint2
+1276972 ?        00:00:03 update-notifier
+1276976 ?        00:00:02 applet.py
+1276980 ?        00:00:00 agent
+1276989 ?        00:00:16 nm-applet
+1277009 ?        00:00:00 dbus-launch
+1277016 ?        00:00:01 dbus-daemon
+1277105 ?        00:00:00 at-spi-bus-laun
+1277115 ?        00:00:03 dbus-daemon
+1277131 ?        00:00:12 at-spi2-registr
+1277181 ?        00:38:23 Xvnc
+1277230 ?        00:00:06 openbox
+1277253 ?        00:00:21 tint2
+1277268 ?        00:00:03 update-notifier
+1277276 ?        00:00:00 applet.py
+1277281 ?        00:00:00 agent
+1277283 ?        00:00:15 nm-applet
+1277292 ?        00:00:00 dbus-launch
+1277312 ?        00:00:00 dbus-daemon
+1277398 ?        00:00:00 at-spi-bus-laun
+1277403 ?        00:00:00 dbus-daemon
+1277421 ?        00:00:06 at-spi2-registr
+1277476 ?        02:21:59 Xvnc
+1277523 ?        00:00:08 openbox
+1277543 ?        00:00:25 tint2
+1277561 ?        00:00:03 update-notifier
+1277568 ?        00:00:00 applet.py
+1277573 ?        00:00:00 agent
+1277576 ?        00:00:00 dbus-launch
+1277583 ?        00:00:15 nm-applet
+1277585 ?        00:00:00 at-spi-bus-laun
+1277599 ?        00:00:00 dbus-daemon
+1277609 ?        00:00:01 dbus-daemon
+1277658 ?        00:00:06 at-spi2-registr
+1277762 ?        00:00:00 Xvnc
+1277817 ?        00:00:00 openbox
+1277838 ?        00:00:17 tint2
+1277854 ?        00:00:03 update-notifier
+1277863 ?        00:00:00 applet.py
+1277867 ?        00:00:00 agent
+1277872 ?        00:00:15 nm-applet
+1277873 ?        00:00:00 dbus-launch
+1277875 ?        00:00:00 at-spi-bus-laun
+1277897 ?        00:00:00 dbus-daemon
+1277903 ?        00:00:00 dbus-daemon
+1278010 ?        00:00:00 at-spi2-registr
+1278089 ?        00:00:00 Xvnc
+1278144 ?        00:00:00 openbox
+1278166 ?        00:00:17 tint2
+1278181 ?        00:00:03 update-notifier
+1278189 ?        00:00:00 applet.py
+1278196 ?        00:00:00 dbus-launch
+1278201 ?        00:00:00 agent
+1278204 ?        00:00:15 nm-applet
+1278210 ?        00:00:00 at-spi-bus-laun
+1278218 ?        00:00:00 dbus-daemon
+1278229 ?        00:00:00 dbus-daemon
+1278314 ?        00:00:00 at-spi2-registr
+1278384 ?        03:54:16 Xvnc
+1278439 ?        00:00:25 openbox
+1278468 ?        00:01:00 tint2
+1278485 ?        00:00:04 update-notifier
+1278489 ?        00:00:01 applet.py
+1278500 ?        00:00:00 agent
+1278506 ?        00:00:16 nm-applet
+1278512 ?        00:00:00 at-spi-bus-laun
+1278520 ?        00:00:00 dbus-launch
+1278528 ?        00:00:01 dbus-daemon
+1278535 ?        00:00:03 dbus-daemon
+1278640 ?        00:00:15 at-spi2-registr
+1278705 ?        00:00:00 Xvnc
+1278752 ?        00:00:00 openbox
+1278775 ?        00:00:17 tint2
+1278790 ?        00:00:03 update-notifier
+1278794 ?        00:00:00 applet.py
+1278798 ?        00:00:00 agent
+1278803 ?        00:00:15 nm-applet
+1278806 ?        00:00:00 at-spi-bus-laun
+1278824 ?        00:00:00 dbus-launch
+1278833 ?        00:00:00 dbus-daemon
+1278839 ?        00:00:00 dbus-daemon
+1278924 ?        00:00:00 at-spi2-registr
+1278992 ?        01:15:29 Xvnc
+1279042 ?        00:00:06 openbox
+1279062 ?        00:00:24 tint2
+1279084 ?        00:00:00 applet.py
+1279090 ?        00:00:00 agent
+1279093 ?        00:00:00 dbus-launch
+1279099 ?        00:00:00 at-spi-bus-laun
+1279122 ?        00:00:00 dbus-daemon
+1279128 ?        00:00:00 dbus-daemon
+1279192 ?        00:00:00 Xvnc
+1279235 ?        00:00:00 openbox
+1279257 ?        00:00:17 tint2
+1279272 ?        00:00:03 update-notifier
+1279276 ?        00:00:00 applet.py
+1279280 ?        00:00:00 agent
+1279282 ?        00:00:15 nm-applet
+1279313 ?        00:00:00 dbus-launch
+1279317 ?        00:00:00 dbus-daemon
+1279363 ?        00:00:00 at-spi-bus-laun
+1279405 ?        00:00:00 dbus-daemon
+1279416 ?        00:00:00 at-spi2-registr
+1279477 ?        00:00:00 Xvnc
+1279528 ?        00:00:00 openbox
+1279548 ?        00:00:17 tint2
+1279563 ?        00:00:03 update-notifier
+1279567 ?        00:00:00 applet.py
+1279572 ?        00:00:00 agent
+1279579 ?        00:00:15 nm-applet
+1279607 ?        00:00:00 dbus-launch
+1279608 ?        00:00:00 dbus-daemon
+1279688 ?        00:00:00 at-spi-bus-laun
+1279697 ?        00:00:00 dbus-daemon
+1279707 ?        00:00:00 at-spi2-registr
+1279774 ?        00:00:00 Xvnc
+1279827 ?        00:00:00 openbox
+1279847 ?        00:00:17 tint2
+1279862 ?        00:00:03 update-notifier
+1279866 ?        00:00:00 applet.py
+1279873 ?        00:00:00 agent
+1279877 ?        00:00:15 nm-applet
+1279881 ?        00:00:00 at-spi-bus-laun
+1279894 ?        00:00:00 dbus-launch
+1279900 ?        00:00:00 dbus-daemon
+1279910 ?        00:00:00 dbus-daemon
+1279954 ?        00:00:00 at-spi2-registr
+1280062 ?        00:00:00 Xvnc
+1280115 ?        00:00:00 openbox
+1280135 ?        00:00:17 tint2
+1280150 ?        00:00:03 update-notifier
+1280154 ?        00:00:00 applet.py
+1280158 ?        00:00:00 agent
+1280163 ?        00:00:15 nm-applet
+1280184 ?        00:00:00 dbus-launch
+1280195 ?        00:00:00 dbus-daemon
+1280282 ?        00:00:00 at-spi-bus-laun
+1280287 ?        00:00:00 dbus-daemon
+1280303 ?        00:00:00 at-spi2-registr
+1280360 ?        00:00:00 Xvnc
+1280564 ?        00:00:00 openbox
+1280587 ?        00:00:17 tint2
+1280602 ?        00:00:03 update-notifier
+1280606 ?        00:00:00 applet.py
+1280611 ?        00:00:00 agent
+1280615 ?        00:00:15 nm-applet
+1280643 ?        00:00:00 dbus-launch
+1280648 ?        00:00:00 dbus-daemon
+1280758 ?        00:00:00 at-spi-bus-laun
+1280773 ?        00:00:00 dbus-daemon
+1280789 ?        00:00:00 at-spi2-registr
+1280882 ?        00:44:04 Xvnc
+1280993 ?        00:00:05 openbox
+1281016 ?        00:00:22 tint2
+1281045 ?        00:00:00 applet.py
+1281051 ?        00:00:00 agent
+1281067 ?        00:00:00 at-spi-bus-laun
+1281078 ?        00:00:00 dbus-launch
+1281087 ?        00:00:00 dbus-daemon
+1281115 ?        00:00:00 dbus-daemon
+1281228 ?        00:00:02 Xvnc
+1281292 ?        00:00:00 openbox
+1281312 ?        00:00:17 tint2
+1281325 ?        00:00:03 update-notifier
+1281331 ?        00:00:00 applet.py
+1281335 ?        00:00:00 agent
+1281342 ?        00:00:15 nm-applet
+1281344 ?        00:00:00 at-spi-bus-laun
+1281365 ?        00:00:00 dbus-launch
+1281370 ?        00:00:00 dbus-daemon
+1281376 ?        00:00:00 dbus-daemon
+1281457 ?        00:00:00 at-spi2-registr
+1281525 ?        00:27:50 Xvnc
+1281606 ?        00:00:01 openbox
+1281628 ?        00:00:19 tint2
+1281641 ?        00:00:03 update-notifier
+1281648 ?        00:00:00 applet.py
+1281655 ?        00:00:00 agent
+1281659 ?        00:00:00 dbus-launch
+1281665 ?        00:00:16 nm-applet
+1281667 ?        00:00:00 at-spi-bus-laun
+1281681 ?        00:00:00 dbus-daemon
+1281691 ?        00:00:00 dbus-daemon
+1281736 ?        00:00:01 at-spi2-registr
+1281888 ?        00:00:00 gvfsd
+1281893 ?        00:00:00 gvfsd-fuse
+1281903 ?        00:00:05 xdg-desktop-por
+1281908 ?        00:00:00 xdg-document-po
+1281912 ?        00:00:00 xdg-permission-
+1281922 ?        00:00:00 xdg-desktop-por
+1281933 ?        00:00:00 dconf-service
+1281942 ?        00:00:00 gnome-keyring-d
+1282303 ?        00:02:27 gnome-terminal-
+1282308 ?        00:00:00 gvfsd
+1282313 ?        00:00:00 gvfsd-fuse
+1282324 ?        00:00:07 xdg-desktop-por
+1282329 ?        00:00:00 xdg-document-po
+1282333 ?        00:00:00 xdg-permission-
+1282343 ?        00:00:01 xdg-desktop-por
+1282351 ?        00:00:00 dconf-service
+1282357 ?        00:00:00 gnome-keyring-d
+1282572 ?        00:00:00 gvfsd
+1282577 ?        00:00:00 gvfsd-fuse
+1282589 ?        00:00:07 xdg-desktop-por
+1282594 ?        00:00:00 xdg-document-po
+1282598 ?        00:00:00 xdg-permission-
+1282608 ?        00:00:01 xdg-desktop-por
+1282616 ?        00:00:00 dconf-service
+1282622 ?        00:00:00 gnome-keyring-d
+1283167 ?        00:01:46 gnome-terminal-
+1283172 ?        00:00:00 gvfsd
+1283177 ?        00:00:00 gvfsd-fuse
+1283191 ?        00:00:06 xdg-desktop-por
+1283198 ?        00:00:00 xdg-document-po
+1283202 ?        00:00:00 xdg-permission-
+1283212 ?        00:00:01 xdg-desktop-por
+1283220 ?        00:00:00 dconf-service
+1283226 ?        00:00:00 gnome-keyring-d
+1283234 pts/13   00:00:00 bash
+1283453 ?        00:02:59 code
+1283488 ?        00:00:00 code
+1283524 ?        00:00:00 code
+1283552 ?        00:00:00 code
+1283679 ?        01:32:26 code
+1283724 ?        00:00:01 code
+1283828 ?        00:49:16 code
+1284074 ?        00:00:31 code
+1284308 ?        00:09:14 code
+1284416 ?        00:16:38 code
+1284477 ?        00:00:09 code
+1284656 pts/15   00:00:00 bash
+1285181 ?        00:00:00 agent
+1285665 ?        00:00:00 gvfsd
+1285670 ?        00:00:00 gvfsd-fuse
+1285679 ?        00:00:06 xdg-desktop-por
+1285684 ?        00:00:00 xdg-document-po
+1285688 ?        00:00:00 xdg-permission-
+1285698 ?        00:00:00 xdg-desktop-por
+1285705 ?        00:00:00 dconf-service
+1285711 ?        00:00:00 gnome-keyring-d
+1286328 ?        00:00:00 gvfsd
+1286333 ?        00:00:00 gvfsd-fuse
+1286359 ?        00:00:06 xdg-desktop-por
+1286364 ?        00:00:00 xdg-document-po
+1286369 ?        00:00:00 xdg-permission-
+1286386 ?        00:00:00 xdg-desktop-por
+1286401 ?        00:00:00 dconf-service
+1286411 ?        00:00:00 gnome-keyring-d
+1286552 ?        00:00:00 gvfsd
+1286557 ?        00:00:00 gvfsd-fuse
+1286566 ?        00:00:06 xdg-desktop-por
+1286571 ?        00:00:00 xdg-document-po
+1286575 ?        00:00:00 xdg-permission-
+1286585 ?        00:00:01 xdg-desktop-por
+1286593 ?        00:00:00 dconf-service
+1286599 ?        00:00:00 gnome-keyring-d
+1286724 pts/24   00:00:00 bash
+1288729 ?        00:00:00 gvfsd
+1288734 ?        00:00:00 gvfsd-fuse
+1288753 ?        00:00:07 xdg-desktop-por
+1288758 ?        00:00:00 xdg-document-po
+1288762 ?        00:00:00 xdg-permission-
+1288772 ?        00:00:01 xdg-desktop-por
+1288780 ?        00:00:00 dconf-service
+1288786 ?        00:00:00 gnome-keyring-d
+1290196 ?        00:11:18 gnome-terminal-
+1290212 ?        00:00:00 gvfsd
+1290219 ?        00:00:00 gvfsd-fuse
+1290254 ?        00:00:06 xdg-desktop-por
+1290260 ?        00:00:00 xdg-document-po
+1290264 ?        00:00:00 xdg-permission-
+1290274 ?        00:00:00 xdg-desktop-por
+1290282 ?        00:00:00 dconf-service
+1290289 ?        00:00:00 gnome-keyring-d
+1290298 pts/27   00:00:00 bash
+1292722 ?        00:04:58 gnome-terminal-
+1292727 ?        00:00:00 gvfsd
+1292733 ?        00:00:00 gvfsd-fuse
+1292748 ?        00:00:06 xdg-desktop-por
+1292754 ?        00:00:00 xdg-document-po
+1292758 ?        00:00:00 xdg-permission-
+1292770 ?        00:00:00 xdg-desktop-por
+1292778 ?        00:00:00 dconf-service
+1292785 ?        00:00:00 gnome-keyring-d
+1292799 pts/28   00:00:00 bash
+1296184 ?        00:08:26 gnome-terminal-
+1296191 ?        00:00:00 gvfsd
+1296196 ?        00:00:00 gvfsd-fuse
+1296286 ?        00:00:07 xdg-desktop-por
+1296291 ?        00:00:00 xdg-document-po
+1296295 ?        00:00:00 xdg-permission-
+1296310 ?        00:00:01 xdg-desktop-por
+1296319 ?        00:00:00 dconf-service
+1296326 ?        00:00:00 gnome-keyring-d
+1296341 pts/29   00:00:00 bash
+1301558 ?        00:00:11 gvfs-udisks2-vo
+1301566 ?        00:00:00 gvfs-goa-volume
+1301570 ?        00:00:04 goa-daemon
+1301579 ?        00:00:00 goa-identity-se
+1301588 ?        00:00:00 gvfs-gphoto2-vo
+1301596 ?        00:00:01 gvfs-afc-volume
+1301602 ?        00:00:00 gvfs-mtp-volume
+1304831 pts/33   00:00:00 bash
+1308984 pts/38   00:00:00 bash
+1309600 ?        00:01:42 rosout
+1313991 ?        00:00:00 gvfsd
+1313996 ?        00:00:00 gvfsd-fuse
+1313997 ?        00:00:01 gvfsd-trash
+1314029 ?        00:00:00 gvfsd-network
+1314052 ?        00:00:06 xdg-desktop-por
+1314061 ?        00:00:00 xdg-document-po
+1314066 ?        00:00:00 xdg-permission-
+1314085 ?        00:00:00 xdg-desktop-por
+1314096 ?        00:00:00 dconf-service
+1314105 ?        00:00:00 gnome-keyring-d
+1314209 ?        00:00:09 gvfsd-dnssd
+1319482 ?        00:00:00 gvfsd-metadata
+1324863 pts/43   00:00:00 bash
+1331146 ?        00:00:14 gnome-terminal-
+1331154 ?        00:00:00 gvfsd
+1331165 ?        00:00:00 gvfsd-fuse
+1331216 ?        00:00:02 xdg-desktop-por
+1331230 ?        00:00:00 xdg-document-po
+1331248 ?        00:00:00 xdg-permission-
+1331269 ?        00:00:00 xdg-desktop-por
+1331287 ?        00:00:00 dconf-service
+1331295 ?        00:00:00 gnome-keyring-d
+1331321 pts/156  00:00:00 bash
+1342677 pts/195  00:00:00 bash
+1345368 pts/195  00:00:36 roscore
+1345458 ?        00:02:30 rosmaster
+1345495 ?        00:00:26 rosout
+1348173 ?        00:00:00 gvfsd
+1348191 ?        00:00:00 gvfsd-fuse
+1348231 ?        00:00:06 xdg-desktop-por
+1348238 ?        00:00:00 xdg-document-po
+1348247 ?        00:00:00 xdg-permission-
+1348261 ?        00:00:00 xdg-desktop-por
+1348269 ?        00:00:00 dconf-service
+1348286 ?        00:00:00 gnome-keyring-d
+1349841 ?        00:11:05 gedit
+1349907 pts/46   00:00:00 bash
+1394321 pts/197  00:00:00 bash
+1399362 pts/85   00:00:00 vim
+1426530 pts/99   00:00:00 bash
+1439248 ?        00:08:58 gnome-terminal-
+1439254 ?        00:00:00 gvfsd
+1439259 ?        00:00:00 gvfsd-fuse
+1439276 ?        00:00:08 xdg-desktop-por
+1439281 ?        00:00:01 xdg-document-po
+1439285 ?        00:00:00 xdg-permission-
+1439299 ?        00:00:01 xdg-desktop-por
+1439309 ?        00:00:00 dconf-service
+1439316 ?        00:00:01 gnome-keyring-d
+1439329 pts/72   00:00:00 bash
+1439829 pts/77   00:00:00 bash
+1444153 ?        00:00:01 at-spi2-registr
+1449758 ?        00:00:00 gvfsd
+1449763 ?        00:00:00 gvfsd-fuse
+1449792 ?        00:00:06 xdg-desktop-por
+1449805 ?        00:00:00 xdg-document-po
+1449818 ?        00:00:00 xdg-permission-
+1449844 ?        00:00:00 xdg-desktop-por
+1449856 ?        00:00:00 dconf-service
+1449863 ?        00:00:00 gnome-keyring-d
+1450979 ?        00:00:22 rosout
+1453516 pts/79   00:00:00 bash
+1453780 ?        00:00:00 sh
+1453792 ?        00:00:25 node
+1453848 ?        00:01:07 node
+1459053 pts/6    00:00:00 bash
+1462095 ?        00:08:27 gnome-terminal-
+1462107 ?        00:00:00 gvfsd
+1462113 ?        00:00:00 gvfsd-fuse
+1462141 ?        00:00:06 xdg-desktop-por
+1462148 ?        00:00:00 xdg-document-po
+1462154 ?        00:00:00 xdg-permission-
+1462167 ?        00:00:00 xdg-desktop-por
+1462177 ?        00:00:00 dconf-service
+1462189 ?        00:00:00 gnome-keyring-d
+1462203 pts/91   00:00:00 bash
+1464490 ?        00:00:18 code
+1464494 ?        00:00:00 code
+1464497 ?        00:00:00 code
+1464500 ?        00:00:00 code
+1464547 ?        00:19:58 code
+1464587 ?        00:00:01 code
+1464683 ?        00:07:47 code
+1464857 ?        00:00:21 code
+1464876 ?        00:00:18 code
+1464902 ?        00:00:04 code
+1467468 pts/92   00:00:00 bash
+1468630 pts/94   00:00:00 bash
+1472662 pts/100  00:00:00 bash
+1475326 pts/101  00:00:00 bash
+1477111 pts/86   00:00:00 bash
+1479896 pts/113  00:00:00 bash
+1484467 pts/23   00:00:00 bash
+1489171 ?        00:00:00 gvfsd
+1489176 ?        00:00:00 gvfsd-fuse
+1489191 ?        00:00:06 xdg-desktop-por
+1489196 ?        00:00:00 xdg-document-po
+1489201 ?        00:00:00 xdg-permission-
+1489222 ?        00:00:00 xdg-desktop-por
+1489237 ?        00:00:00 dconf-service
+1489243 ?        00:00:00 gnome-keyring-d
+1489272 ?        00:00:09 systemd
+1489276 ?        00:00:00 (sd-pam)
+1489832 ?        03:24:10 Xvnc
+1489901 ?        00:00:10 openbox
+1490000 ?        00:00:37 tint2
+1490014 ?        00:00:00 dbus-launch
+1490023 ?        00:00:00 dbus-daemon
+1490028 ?        00:00:03 update-notifier
+1490038 ?        00:00:00 applet.py
+1490046 ?        00:00:00 agent
+1490049 ?        00:00:16 nm-applet
+1490090 ?        00:00:00 at-spi-bus-laun
+1490104 ?        00:00:01 dbus-daemon
+1490114 ?        00:00:05 at-spi2-registr
+1490618 ?        00:00:00 gvfsd
+1490623 ?        00:00:00 gvfsd-fuse
+1490656 ?        00:00:06 xdg-desktop-por
+1490664 ?        00:00:00 xdg-document-po
+1490669 ?        00:00:00 xdg-permission-
+1490695 ?        00:00:01 xdg-desktop-por
+1490703 ?        00:00:00 dconf-service
+1490710 ?        00:00:00 gnome-keyring-d
+1500979 ?        00:00:00 gvfsd
+1500985 ?        00:00:00 gvfsd-fuse
+1501005 ?        00:00:07 xdg-desktop-por
+1501010 ?        00:00:00 xdg-document-po
+1501019 ?        00:00:00 xdg-permission-
+1501048 ?        00:00:01 xdg-desktop-por
+1501056 ?        00:00:00 dconf-service
+1501062 ?        00:00:00 gnome-keyring-d
+1504802 ?        00:05:58 gnome-terminal-
+1504807 ?        00:00:00 gvfsd
+1504812 ?        00:00:00 gvfsd-fuse
+1504820 ?        00:00:06 xdg-desktop-por
+1504825 ?        00:00:00 xdg-document-po
+1504829 ?        00:00:00 xdg-permission-
+1504839 ?        00:00:00 xdg-desktop-por
+1504847 ?        00:00:00 dconf-service
+1504866 ?        00:00:00 gnome-keyring-d
+1504940 pts/40   00:00:00 bash
+1507429 pts/41   00:00:00 bash
+1512396 pts/5    00:00:00 bash
+1535624 pts/50   00:00:00 bash
+1548755 ?        00:07:40 gnome-terminal-
+1548763 ?        00:00:00 gvfsd
+1548768 ?        00:00:00 gvfsd-fuse
+1548781 ?        00:00:06 xdg-desktop-por
+1548787 ?        00:00:00 xdg-document-po
+1548794 ?        00:00:00 xdg-permission-
+1548816 ?        00:00:01 xdg-desktop-por
+1548833 ?        00:00:00 dconf-service
+1548845 ?        00:00:00 gnome-keyring-d
+1548856 pts/122  00:00:00 bash
+1550456 ?        00:04:35 code
+1550467 ?        00:00:00 code
+1550471 ?        00:00:00 code
+1550483 ?        00:00:00 code
+1550647 ?        00:40:13 code
+1550694 ?        00:00:02 code
+1550748 ?        00:33:35 code
+1551243 ?        00:01:19 code
+1551302 ?        00:00:59 code
+1551448 ?        00:00:03 code
+1551451 ?        00:00:04 code
+1558621 ?        00:08:35 gnome-terminal-
+1558667 ?        00:00:00 gvfsd
+1558677 ?        00:00:00 gvfsd-fuse
+1558730 ?        00:00:07 xdg-desktop-por
+1558744 ?        00:00:00 xdg-document-po
+1558752 ?        00:00:00 xdg-permission-
+1558770 ?        00:00:01 xdg-desktop-por
+1558780 ?        00:00:00 dconf-service
+1558787 ?        00:00:00 gnome-keyring-d
+1561908 ?        00:00:02 tmux: server
+1561910 pts/169  00:00:00 bash
+1563270 pts/170  00:00:00 bash
+1563890 pts/171  00:00:00 bash
+1564212 pts/170  00:00:00 vim
+1568476 pts/171  00:00:00 vim
+1575069 pts/124  00:00:00 bash
+1602213 ?        00:04:07 code
+1602217 ?        00:00:00 code
+1602219 ?        00:00:00 code
+1602226 ?        00:00:00 code
+1602358 ?        00:00:01 code
+1602384 ?        00:40:02 code
+1602628 ?        00:02:22 code
+1602685 ?        00:00:52 code
+1602724 ?        00:00:14 code
+1602800 ?        00:01:33 code
+1603449 ?        00:21:12 code
+1606239 pts/123  00:00:00 bash
+1606402 pts/122  00:00:01 roslaunch
+1606756 ?        00:00:00 gzclient <defunct>
+1607262 pts/160  00:00:00 bash
+1608989 pts/123  00:00:00 vim
+1615819 ?        00:00:00 agent
+1628491 ?        00:00:00 agent
+1663244 pts/122  00:00:00 roslaunch
+1663565 ?        00:00:22 python3 <defunct>
+1665229 pts/21   00:00:00 bash
+1678214 ?        00:01:17 gnome-terminal-
+1678287 pts/58   00:00:00 bash
+1685250 pts/131  00:00:00 bash
+1690048 pts/111  00:00:00 bash
+1699343 ?        00:00:00 sshd
+1701496 ?        00:00:06 sshd
+1701499 ?        00:00:00 bash
+1701516 ?        00:00:00 bash
+1701622 ?        00:00:00 sh
+1701631 ?        00:00:24 node
+1701734 ?        00:00:39 node
+1701795 ?        00:00:02 node
+1701897 ?        00:00:45 node
+1702007 pts/138  00:00:00 bash
+1715496 pts/143  00:00:00 bash
+1765926 ?        00:00:00 sh
+1765936 ?        00:00:08 node
+1766028 ?        00:00:14 node
+1766073 ?        00:00:01 node
+1766196 ?        00:00:17 node
+1766660 pts/155  00:00:00 bash
+1775461 pts/133  00:00:00 bash
+1812247 pts/173  00:00:00 bash
+1819846 pts/122  00:00:03 roslaunch
+1820094 ?        00:00:00 gzclient <defunct>
+1820116 ?        00:22:35 python3 <defunct>
+1826118 ?        00:00:53 code
+1826122 ?        00:00:00 code
+1826123 ?        00:00:00 code
+1826127 ?        00:00:00 code
+1826223 ?        00:06:27 code
+1826278 ?        00:00:00 code
+1826325 ?        00:07:45 code
+1826633 ?        00:00:37 code
+1826649 ?        00:00:08 code
+1826715 ?        00:00:01 code
+1826780 ?        00:00:02 code
+1827247 ?        00:04:54 code
+1831024 pts/30   00:00:00 bash
+1845077 ?        00:00:01 gvfsd-trash
+1845268 ?        00:00:10 gvfs-udisks2-vo
+1845279 ?        00:00:00 gvfs-goa-volume
+1845283 ?        00:00:04 goa-daemon
+1845364 ?        00:00:00 goa-identity-se
+1845374 ?        00:00:00 gvfs-gphoto2-vo
+1845387 ?        00:00:01 gvfs-afc-volume
+1845396 ?        00:00:00 gvfs-mtp-volume
+1849361 ?        00:00:00 gvfsd
+1849368 ?        00:00:00 gvfsd-fuse
+1849410 ?        00:00:05 xdg-desktop-por
+1849417 ?        00:00:00 xdg-document-po
+1849423 ?        00:00:00 xdg-permission-
+1849444 ?        00:00:00 xdg-desktop-por
+1849456 ?        00:00:06 at-spi2-registr
+1849465 ?        00:00:00 dconf-service
+1849491 ?        00:00:00 gnome-keyring-d
+1850878 pts/140  00:00:00 bash
+1851722 ?        00:00:00 gvfsd-metadata
+1869383 ?        00:03:45 gnome-terminal-
+1869596 pts/0    00:00:00 bash
+1869991 pts/141  00:00:00 bash
+1871411 pts/148  00:00:00 bash
+1877524 pts/158  00:00:00 bash
+1886211 pts/6    07:12:53 htop
+1886897 pts/63   00:00:00 bash
+1902741 pts/57   00:00:00 bash
+1915174 ?        00:00:10 gvfs-udisks2-vo
+1915183 ?        00:00:00 gvfs-goa-volume
+1915188 ?        00:00:04 goa-daemon
+1915333 ?        00:00:00 goa-identity-se
+1915342 ?        00:00:00 gvfs-gphoto2-vo
+1915349 ?        00:00:01 gvfs-afc-volume
+1915357 ?        00:00:00 gvfs-mtp-volume
+1916380 ?        00:00:00 gvfsd-metadata
+1938728 pts/8    00:00:00 bash
+1942969 ?        00:00:34 node
+1942990 ?        00:00:12 node
+1945478 ?        00:04:15 node
+1951565 pts/37   00:00:00 bash
+1967448 ?        00:00:00 sshd
+1967680 ?        00:00:00 sshd
+1967681 pts/121  00:00:00 bash
+1979757 pts/70   00:00:00 bash
+1983119 ?        00:04:05 Xvnc
+1983209 ?        00:00:00 openbox
+1983235 ?        00:00:05 tint2
+1983248 ?        00:00:00 dbus-launch
+1983255 ?        00:00:00 dbus-daemon
+1983261 ?        00:00:01 update-notifier
+1983266 ?        00:00:00 applet.py
+1983280 ?        00:00:00 agent
+1983284 ?        00:00:05 nm-applet
+1983289 ?        00:00:00 at-spi-bus-laun
+1983302 ?        00:00:00 dbus-daemon
+1983382 ?        00:00:00 at-spi2-registr
+1985220 ?        00:00:00 gvfsd
+1985229 ?        00:00:00 gvfsd-fuse
+1985260 ?        00:00:01 xdg-desktop-por
+1985272 ?        00:00:00 xdg-document-po
+1985278 ?        00:00:00 xdg-permission-
+1985304 ?        00:00:00 xdg-desktop-por
+1985316 ?        00:00:00 dconf-service
+1985322 ?        00:00:00 gnome-keyring-d
+2006209 ?        00:00:11 code
+2006212 ?        00:00:00 code
+2006213 ?        00:00:00 code
+2006219 ?        00:00:00 code
+2006254 ?        00:01:03 code
+2006257 ?        00:00:00 code
+2006303 ?        00:01:49 code
+2006424 ?        00:00:13 code
+2006469 ?        00:00:07 code
+2006489 ?        00:00:01 code
+2006542 ?        00:00:17 code
+2006660 ?        00:00:00 code
+2007361 pts/181  00:00:00 bash
+2007631 ?        00:00:53 code
+2014266 ?        00:00:00 gnome-keyring-d
+2032587 pts/51   00:00:00 bash
+2038767 pts/201  00:00:00 bash
+2044325 pts/202  00:00:00 bash
+2063010 ?        00:01:12 gnome-terminal-
+2063051 pts/118  00:00:00 bash
+2063224 pts/150  00:00:00 bash
+2063388 pts/152  00:00:00 bash
+2063560 pts/172  00:00:00 bash
+2072056 ?        00:10:01 gnome-terminal-
+2078219 pts/196  00:00:00 bash
+2079604 ?        00:00:00 gvfsd
+2079612 ?        00:00:00 gvfsd-fuse
+2079657 ?        00:00:01 xdg-desktop-por
+2079664 ?        00:00:00 xdg-document-po
+2079670 ?        00:00:00 xdg-permission-
+2079686 ?        00:00:00 xdg-desktop-por
+2079700 ?        00:00:00 dconf-service
+2085438 pts/48   00:00:00 bash
+2087555 pts/55   00:00:00 bash
+2090985 pts/62   00:00:00 bash
+2100645 ?        00:00:02 at-spi2-registr
+2109777 ?        00:00:00 agent
+2113507 ?        00:00:00 agent
+2114922 ?        00:00:00 agent
+2120117 ?        00:00:00 agent
+2120447 ?        00:00:00 agent
+2120863 pts/44   00:00:00 bash
+2123824 ?        00:00:00 agent
+2124555 ?        00:00:00 gvfsd
+2124618 ?        00:00:00 gvfsd-fuse
+2124744 ?        00:00:05 xdg-desktop-por
+2124753 ?        00:00:00 xdg-document-po
+2124758 ?        00:00:00 xdg-permission-
+2124770 ?        00:00:00 xdg-desktop-por
+2124782 ?        00:00:00 dconf-service
+2124788 ?        00:00:00 gnome-keyring-d
+2130230 ?        00:00:00 agent
+2148249 ?        00:00:25 code
+2148267 ?        00:00:00 code
+2148268 ?        00:00:00 code
+2148288 ?        00:00:00 code
+2148403 ?        00:00:00 code
+2148415 ?        00:02:09 code
+2148419 ?        00:00:00 code
+2148429 ?        00:05:07 code
+2148578 ?        00:00:07 code
+2148603 ?        00:00:20 code
+2148692 ?        00:00:07 code
+2148698 ?        00:00:02 code
+2157857 ?        00:01:11 gnome-terminal-
+2157885 pts/104  00:00:00 bash
+2158928 ?        00:00:45 code
+2158931 ?        00:00:00 code
+2158932 ?        00:00:00 code
+2158935 ?        00:00:00 code
+2158969 ?        00:42:07 code
+2159017 ?        00:00:01 code
+2159031 ?        00:22:50 code
+2159190 ?        00:00:22 code
+2159209 ?        00:00:18 code
+2159235 ?        00:00:04 code
+2180414 pts/142  00:00:00 bash
+2196748 ?        00:01:02 gnome-terminal-
+2196762 ?        00:00:00 gvfsd
+2196778 ?        00:00:00 gvfsd-fuse
+2196828 ?        00:00:01 xdg-desktop-por
+2196842 ?        00:00:00 xdg-document-po
+2196852 ?        00:00:00 xdg-permission-
+2196881 ?        00:00:00 xdg-desktop-por
+2196899 ?        00:00:00 dconf-service
+2196930 ?        00:00:00 gnome-keyring-d
+2196980 pts/166  00:00:00 bash
+2201112 pts/29   00:01:21 nautilus
+2201487 ?        00:01:13 tmux: server
+2201488 pts/182  00:00:00 bash
+2205550 pts/188  00:00:00 bash
+2214731 ?        00:03:23 rosout
+2217568 ?        00:00:00 sshd
+2217573 ?        00:00:00 sshd
+2217575 pts/81   00:00:00 bash
+2224002 ?        00:00:00 sshd
+2224005 ?        00:00:08 sshd
+2224006 ?        00:00:00 bash
+2224013 ?        00:00:00 bash
+2224443 ?        00:00:00 sh
+2224452 ?        00:01:00 node
+2224518 ?        00:01:27 node
+2225347 ?        00:04:48 node
+2225373 ?        00:00:02 node
+2225481 pts/207  00:00:00 bash
+2244859 pts/81   00:00:00 tmux: client
+2252784 ?        00:12:46 node
+2269100 ?        00:00:00 agent
+2270731 pts/85   00:00:01 bash
+2271895 ?        00:00:00 agent
+2272591 ?        00:00:00 agent
+2276963 ?        00:00:00 agent
+2290653 pts/200  00:00:00 bash
+2298715 pts/211  00:00:00 bash
+2313336 pts/212  00:00:00 bash
+2327514 pts/213  00:00:00 bash
+2344860 pts/184  00:00:00 bash
+2353316 ?        00:00:00 agent
+2374705 ?        00:00:00 UVM GPU5 BH
+2374706 ?        00:00:00 UVM GPU5 KC
+2383693 pts/7    00:00:00 bash
+2384045 ?        02:39:13 Xvnc
+2384149 ?        00:00:02 openbox
+2384168 ?        00:00:16 tint2
+2384181 ?        00:00:00 dbus-launch
+2384183 ?        00:00:00 dbus-daemon
+2384194 ?        00:00:02 update-notifier
+2384204 ?        00:00:00 applet.py
+2384208 ?        00:00:00 agent
+2384214 ?        00:00:13 nm-applet
+2384216 ?        00:00:00 at-spi-bus-laun
+2384267 ?        00:00:00 dbus-daemon
+2384274 ?        00:00:00 at-spi2-registr
+2385969 ?        00:21:22 gnome-terminal-
+2385989 ?        00:00:00 gvfsd
+2385998 ?        00:00:00 gvfsd-fuse
+2386020 ?        00:00:05 xdg-desktop-por
+2386027 ?        00:00:00 xdg-document-po
+2386032 ?        00:00:00 xdg-permission-
+2386043 ?        00:00:00 xdg-desktop-por
+2386052 ?        00:00:00 dconf-service
+2386059 ?        00:00:00 gnome-keyring-d
+2386074 pts/19   00:00:00 bash
+2396194 pts/219  00:00:00 bash
+2396715 pts/56   00:00:00 bash
+2404144 ?        00:00:00 agent
+2408301 ?        00:00:00 agent
+2409143 pts/27   00:00:17 roscore
+2409465 ?        00:07:32 rosmaster
+2409700 ?        00:00:09 rosout
+2409963 pts/115  00:00:00 bash
+2410163 ?        00:00:00 agent
+2413985 ?        00:00:00 agent
+2429597 pts/63   00:00:04 rostopic
+2454903 ?        00:00:00 agent
+2456700 ?        00:00:18 node
+2456711 ?        00:00:25 node
+2471006 ?        00:00:00 sshd
+2471472 ?        00:00:00 sshd
+2471497 pts/194  00:00:00 bash
+2480042 pts/154  00:00:00 bash
+2481333 pts/154  00:00:37 gedit
+2499680 ?        00:00:00 sshd
+2500032 ?        00:00:00 sshd
+2500061 ?        00:00:00 sftp-server
+2502209 ?        00:00:00 kworker/33:2-mm_percpu_wq
+2507231 ?        00:00:00 agent
+2507746 ?        00:00:00 agent
+2508660 pts/106  00:00:00 bash
+2514406 ?        00:00:00 sshd
+2514771 ?        00:00:00 sshd
+2514772 pts/208  00:00:00 bash
+2548205 ?        00:00:00 code
+2549168 ?        00:01:46 gnome-terminal-
+2559496 pts/89   00:00:00 bash
+2561563 ?        00:00:00 gvfsd-http
+2582016 pts/129  00:00:00 bash
+2588977 ?        00:00:00 agent
+2597334 pts/198  00:00:00 bash
+2602531 pts/106  00:00:00 vim
+2625456 pts/107  00:00:01 bash
+2631823 pts/220  00:00:00 bash
+2647844 pts/222  00:00:00 bash
+2650570 pts/36   00:00:00 bash
+2669840 pts/216  00:00:00 bash
+2683103 ?        00:00:00 UVM GPU3 BH
+2683104 ?        00:00:00 UVM GPU3 KC
+2689420 ?        00:06:55 rosout
+2715510 pts/44   00:00:30 rostopic
+2715768 pts/111  00:00:19 roslaunch
+2715857 ?        00:00:41 turtlebot3_tele <defunct>
+2718726 ?        00:00:00 kworker/36:2-mm_percpu_wq
+2730969 ?        00:00:00 sshd
+2731314 ?        00:00:00 sshd
+2731358 ?        00:00:00 bash
+2732180 ?        00:00:00 sh
+2732192 ?        00:00:05 node
+2732263 ?        00:00:05 node
+2732319 ?        00:00:00 node
+2732868 ?        00:00:09 node
+2732911 pts/177  00:00:00 bash
+2754011 pts/122  00:00:25 roslaunch
+2754025 ?        00:51:18 rosmaster
+2754038 ?        00:25:14 rosout
+2754066 ?        00:27:27 python3 <defunct>
+2758900 ?        00:00:45 gnome-terminal-
+2758959 pts/93   00:00:00 bash
+2765164 ?        00:00:00 bash
+2765253 ?        00:00:00 sh
+2765260 ?        00:00:08 node
+2765340 ?        00:00:12 node
+2765551 ?        00:00:12 node
+2765710 ?        00:00:00 node
+2765936 pts/199  00:00:00 bash
+2769876 pts/225  00:00:00 bash
+2770659 ?        00:00:00 sshd
+2771660 ?        00:00:00 sshd
+2771679 pts/132  00:00:00 bash
+2772762 pts/132  00:00:00 tmux: client
+2784387 ?        00:00:00 node
+2804380 pts/97   00:08:55 turtlebot3_tele
+2809068 ?        00:00:00 gvfs-udisks2-vo
+2809111 ?        00:00:00 gvfs-goa-volume
+2809120 ?        00:00:00 goa-daemon
+2809166 ?        00:00:00 goa-identity-se
+2809173 ?        00:00:00 gvfs-gphoto2-vo
+2809203 ?        00:00:00 gvfs-afc-volume
+2809221 ?        00:00:00 gvfs-mtp-volume
+2809893 pts/151  00:00:00 bash
+2810278 pts/211  00:00:22 gedit
+2829775 pts/61   00:00:00 bash
+2833310 ?        00:00:00 kworker/16:0-events
+2845872 pts/59   00:00:00 bash
+2848414 pts/208  00:00:13 watch
+2867571 pts/36   00:00:08 ipython3
+2876066 pts/36   00:00:00 xdg-open <defunct>
+2881756 ?        00:00:00 kworker/55:1-rcu_par_gp
+2889714 ?        00:00:00 kworker/6:0-mm_percpu_wq
+2892598 ?        00:00:00 gvfsd-metadata
+2892740 pts/52   00:00:00 bash
+2893168 ?        00:00:00 sshd
+2893693 ?        00:00:00 sshd
+2893718 pts/125  00:00:00 bash
+2907377 pts/183  00:00:00 bash
+2927505 ?        00:00:00 kworker/28:2-mm_percpu_wq
+2931236 ?        00:00:00 kworker/45:2-mm_percpu_wq
+2932206 pts/73   00:00:00 bash
+2935290 pts/95   00:00:00 bash
+2940740 pts/221  00:00:00 bash
+2942339 pts/227  00:00:00 bash
+2942469 ?        00:00:00 kworker/40:4-events
+2942636 ?        00:00:00 kworker/5:0-mm_percpu_wq
+2948005 ?        00:00:00 systemd
+2948012 ?        00:00:00 (sd-pam)
+2948969 ?        00:00:00 agent
+2953231 pts/38   00:00:08 rostopic
+2953732 pts/98   00:00:00 bash
+2954061 ?        00:10:09 Xvnc
+2954191 ?        00:00:00 openbox
+2954269 ?        00:00:02 tint2
+2954290 ?        00:00:00 dbus-launch
+2954298 ?        00:00:00 dbus-daemon
+2954322 ?        00:00:00 applet.py
+2954327 ?        00:00:00 agent
+2954336 ?        00:00:01 nm-applet
+2954379 ?        00:00:00 at-spi-bus-laun
+2954401 ?        00:00:00 dbus-daemon
+2954500 ?        00:00:00 at-spi2-registr
+2956723 ?        00:00:19 gnome-terminal-
+2956748 ?        00:00:00 gvfsd
+2956766 ?        00:00:00 gvfsd-fuse
+2956972 ?        00:00:00 xdg-desktop-por
+2956987 ?        00:00:00 xdg-document-po
+2956999 ?        00:00:00 xdg-permission-
+2957035 ?        00:00:00 xdg-desktop-por
+2957085 ?        00:00:00 dconf-service
+2957088 ?        00:00:00 gnome-keyring-d
+2957217 pts/103  00:00:00 bash
+2957996 ?        00:00:22 code
+2958020 ?        00:00:00 code
+2958022 ?        00:00:00 code
+2958036 ?        00:00:00 code
+2958167 ?        00:02:43 code
+2958195 ?        00:00:00 code
+2958225 ?        00:04:32 code
+2959517 ?        00:00:22 code
+2959562 ?        00:00:04 code
+2959837 ?        00:00:00 code
+2960414 ?        00:00:02 code
+2961978 ?        00:04:02 code
+2968558 ?        00:00:13 node
+2968568 ?        00:00:40 node
+2974412 pts/15   00:00:08 roslaunch
+2974856 ?        00:03:18 rosmaster
+2974950 ?        00:02:01 rosout
+2974969 ?        00:02:50 robot_state_pub
+2975135 ?        00:40:07 slam_gmapping
+2975157 ?        00:23:49 rviz
+2976182 pts/36   00:00:00 ipython3
+2979938 pts/228  00:00:00 bash
+2984794 ?        00:02:38 rosout
+2989432 ?        00:00:00 sshd
+2989662 ?        00:00:00 sshd
+2989663 pts/128  00:00:00 bash
+3000232 ?        00:00:00 sshd
+3004304 ?        00:00:01 sshd
+3004307 ?        00:00:00 bash
+3004342 ?        00:00:00 bash
+3009387 pts/96   00:00:00 bash
+3012065 ?        00:00:00 UVM GPU4 BH
+3012066 ?        00:00:00 UVM GPU4 KC
+3012866 pts/62   00:00:07 roslaunch
+3013425 ?        00:02:29 robot_state_pub
+3013429 ?        00:00:00 gzserver
+3013430 ?        00:00:00 gzclient
+3013446 ?        00:37:57 slam_gmapping
+3013457 ?        00:05:04 python3
+3013497 ?        01:07:52 python3
+3013499 ?        00:09:45 rviz
+3013647 ?        00:52:06 gzclient
+3013689 ?        01:01:32 gzserver
+3030454 ?        00:00:00 kworker/58:0-events
+3032529 ?        00:00:00 kworker/29:0-mm_percpu_wq
+3039496 pts/69   00:00:00 bash
+3042957 pts/1    00:00:00 bash
+3045146 pts/69   00:00:07 rostopic
+3045452 ?        00:00:00 kworker/42:1-events
+3045519 pts/53   00:00:00 bash
+3045922 ?        00:00:00 kworker/54:1-events
+3047168 ?        00:01:07 code
+3051654 pts/42   00:00:00 bash
+3059077 ?        00:00:00 kworker/4:1-mm_percpu_wq
+3065186 ?        00:00:00 kworker/51:2-md
+3066825 pts/47   00:00:00 bash
+3068642 ?        00:00:00 kworker/23:1-mm_percpu_wq
+3069974 pts/111  00:00:00 roslaunch
+3071301 pts/134  00:00:00 bash
+3073651 ?        00:00:00 sshd
+3073811 ?        00:00:00 sshd
+3073813 pts/135  00:00:00 bash
+3077985 ?        00:00:00 kworker/52:1-events
+3079536 pts/147  00:00:00 bash
+3082295 ?        00:00:00 kworker/10:2-mm_percpu_wq
+3086683 ?        00:00:00 kworker/39:2-events
+3089162 ?        00:00:00 kworker/25:2-mm_percpu_wq
+3090843 pts/35   00:00:00 bash
+3094951 pts/193  00:00:00 tmux: client
+3097589 pts/64   00:00:00 bash
+3097658 ?        00:02:11 rosmaster
+3097742 ?        00:01:27 rosout
+3099719 ?        00:00:00 kworker/49:2-mm_percpu_wq
+3101165 ?        00:00:00 kworker/15:2-events
+3102702 pts/216  00:04:18 python3
+3104892 ?        00:00:00 kworker/37:0-events
+3104978 ?        00:00:09 gnome-terminal-
+3105100 pts/32   00:00:00 bash
+3114718 pts/11   00:00:00 bash
+3121066 pts/66   00:00:00 bash
+3123792 pts/32   00:00:04 roscore
+3123970 ?        00:01:05 rosmaster
+3124272 ?        00:00:02 rosout
+3124292 ?        00:00:00 kworker/43:2-mm_percpu_wq
+3124325 pts/165  00:00:00 bash
+3125023 ?        00:00:00 kworker/u130:2-events_unbound
+3127857 ?        00:00:00 kworker/9:0-mm_percpu_wq
+3128420 ?        00:00:00 pickup
+3130709 ?        00:00:00 kworker/31:2-mm_percpu_wq
+3134780 ?        00:00:00 kworker/35:0-events
+3139060 pts/186  00:00:01 rostopic
+3139879 ?        00:00:00 kworker/50:1-mm_percpu_wq
+3140093 ?        00:00:00 kworker/8:1-mm_percpu_wq
+3140885 pts/117  00:00:00 bash
+3142456 ?        00:00:00 kworker/20:2-events
+3142522 ?        00:00:00 kworker/48:1-events
+3142545 ?        00:00:00 kworker/17:0-mm_percpu_wq
+3142561 ?        00:00:00 kworker/22:2-events
+3142582 ?        00:00:00 kworker/21:6-mm_percpu_wq
+3142602 ?        00:00:00 kworker/27:4-events
+3142624 ?        00:00:00 kworker/62:2-events
+3142686 ?        00:00:00 kworker/63:5-rcu_par_gp
+3142859 ?        00:00:00 kworker/24:1-mm_percpu_wq
+3143459 pts/163  00:00:00 bash
+3146738 ?        00:00:06 gedit
+3150393 ?        00:00:00 kworker/47:2-events
+3151483 ?        00:00:00 kworker/60:2-events
+3151648 ?        00:00:01 kworker/u129:3-events_unbound
+3151887 ?        00:00:00 kworker/3:0-events
+3152973 ?        00:00:01 kworker/u130:3-events_unbound
+3155069 pts/166  00:00:00 less
+3155150 pts/205  00:00:00 bash
+3157867 pts/205  00:00:46 gedit
+3158615 ?        00:00:01 kworker/0:2-events
+3159209 ?        00:00:00 kworker/61:2-md
+3163751 pts/128  00:00:51 top
+3165584 pts/90   00:00:00 bash
+3169908 pts/184  00:01:11 rostopic
+3172526 ?        00:00:00 kworker/11:2-events
+3173564 ?        00:00:00 kworker/43:0-events
+3173569 ?        00:00:00 kworker/19:2-events
+3175024 ?        00:00:00 kworker/46:0-events
+3175462 ?        00:00:00 kworker/26:0-md
+3178009 ?        00:00:00 kworker/u129:1-events_unbound
+3178309 ?        00:00:00 kworker/44:2-mm_percpu_wq
+3178312 ?        00:00:00 kworker/1:1-mm_percpu_wq
+3179580 ?        00:00:00 kworker/14:0-events
+3180481 ?        00:00:00 kworker/41:0-mm_percpu_wq
+3180806 ?        00:00:00 kworker/4:2-events
+3180810 pts/187  00:00:00 bash
+3182879 pts/97   00:00:00 bash
+3184611 ?        00:00:00 kworker/34:0-mm_percpu_wq
+3185546 ?        00:00:00 kworker/37:1-mm_percpu_wq
+3188871 ?        00:00:00 UVM GPU2 BH
+3188872 ?        00:00:00 UVM GPU2 KC
+3189614 ?        00:00:00 kworker/59:1-events
+3190219 ?        00:00:00 kworker/60:0-events
+3192219 ?        00:00:00 kworker/56:1-events
+3194745 pts/220  00:00:03 roslaunch
+3194867 ?        00:01:24 rosmaster
+3194920 ?        00:00:50 rosout
+3194929 ?        00:01:10 robot_state_pub
+3194931 ?        00:00:00 gzserver
+3194933 ?        00:00:00 gzclient
+3194946 ?        00:17:33 slam_gmapping
+3194948 ?        00:02:36 python3
+3194950 ?        00:04:22 rviz
+3194953 ?        00:05:38 python3
+3195078 ?        00:14:52 gzclient
+3195121 ?        00:15:42 gzserver
+3195628 ?        00:00:00 kworker/53:1-events
+3196680 ?        00:00:00 Xvnc
+3196745 ?        00:00:00 kworker/35:2-mm_percpu_wq
+3196767 ?        00:00:00 openbox
+3196798 ?        00:00:00 tint2
+3196826 ?        00:00:00 update-notifier
+3196833 ?        00:00:00 dbus-launch
+3196834 ?        00:00:00 applet.py
+3196843 ?        00:00:00 agent
+3196844 ?        00:00:00 dbus-daemon
+3196849 ?        00:00:00 nm-applet
+3196852 ?        00:00:00 at-spi-bus-laun
+3196871 ?        00:00:00 dbus-daemon
+3196908 pts/142  00:00:02 roscore
+3196966 ?        00:00:00 at-spi2-registr
+3197116 ?        00:01:11 rosmaster
+3197170 ?        00:00:03 rosout
+3197310 ?        00:00:00 kworker/38:0-mm_percpu_wq
+3197493 ?        00:00:00 Xvnc
+3197563 ?        00:00:00 openbox
+3197599 ?        00:00:00 tint2
+3197626 ?        00:00:00 update-notifier
+3197631 ?        00:00:00 dbus-launch
+3197634 ?        00:00:00 dbus-daemon
+3197636 ?        00:00:00 applet.py
+3197648 ?        00:00:00 agent
+3197657 ?        00:00:00 nm-applet
+3197659 ?        00:00:00 at-spi-bus-laun
+3197676 ?        00:00:00 dbus-daemon
+3197722 ?        00:00:00 at-spi2-registr
+3197888 pts/48   00:00:03 roslaunch
+3198117 ?        00:00:00 gzserver
+3198120 ?        00:00:00 gzclient
+3198141 ?        00:17:27 slam_gmapping
+3198155 ?        00:02:12 python3
+3198159 ?        00:07:20 rviz
+3198165 ?        00:26:59 python3
+3198169 ?        00:08:07 python3
+3198177 ?        00:01:59 python3
+3198312 ?        00:15:59 gzclient
+3198364 ?        00:15:46 gzserver
+3200298 pts/55   00:03:09 python3
+3201331 ?        00:00:00 kworker/7:0-mm_percpu_wq
+3201795 pts/129  00:07:45 python3
+3202730 ?        00:00:00 kworker/49:1
+3202734 ?        00:00:00 kworker/14:2-events
+3204358 ?        00:00:00 kworker/18:2-mm_percpu_wq
+3204796 ?        00:00:00 kworker/13:2-events
+3207297 pts/71   00:00:00 bash
+3207966 ?        00:00:00 kworker/2:2-mm_percpu_wq
+3209110 pts/53   00:00:04 python3
+3209327 pts/90   00:01:10 rqt_graph
+3210265 ?        00:00:00 kworker/36:0-mm_percpu_wq
+3210894 pts/93   00:00:06 gedit
+3211043 ?        00:00:00 kworker/30:0-events
+3211057 ?        00:00:00 kworker/57:2-mm_percpu_wq
+3211312 ?        00:00:00 kworker/44:1-events
+3211531 ?        00:00:00 kworker/45:0-cgroup_destroy
+3213532 ?        00:00:00 kworker/25:1-events
+3213537 ?        00:00:00 kworker/55:0-events
+3213742 ?        00:00:00 kworker/33:1-mm_percpu_wq
+3214812 ?        00:00:00 kworker/39:0-events
+3216346 ?        00:00:00 kworker/16:1-events
+3218284 ?        00:00:00 gnome-terminal-
+3218290 ?        00:00:00 gvfsd
+3218291 ?        00:00:00 kworker/54:0-events
+3218298 ?        00:00:00 gvfsd-fuse
+3218315 ?        00:00:00 xdg-desktop-por
+3218320 ?        00:00:00 xdg-document-po
+3218325 ?        00:00:00 xdg-permission-
+3218342 ?        00:00:00 xdg-desktop-por
+3218354 ?        00:00:00 dconf-service
+3218363 ?        00:00:00 gnome-keyring-d
+3218442 pts/75   00:00:00 bash
+3218765 ?        00:00:00 kworker/26:1-mm_percpu_wq
+3219847 ?        00:00:00 kworker/32:0-mm_percpu_wq
+3223786 ?        00:00:00 kworker/62:1-events
+3229034 ?        00:00:00 kworker/12:0-mm_percpu_wq
+3229429 ?        00:00:00 kworker/31:0-events
+3229681 ?        00:00:00 kworker/3:1-mm_percpu_wq
+3229797 ?        00:00:00 kworker/u129:2-events_unbound
+3230025 ?        00:00:00 kworker/17:2-events
+3230444 ?        00:00:00 kworker/29:1-events
+3230625 ?        00:00:00 kworker/57:3-events
+3232571 ?        00:00:00 kworker/48:0-cgroup_destroy
+3236056 ?        00:00:00 kworker/21:0-events
+3236691 ?        00:00:00 kworker/8:2-mm_percpu_wq
+3236953 ?        00:00:00 kworker/20:0-mm_percpu_wq
+3237837 pts/65   00:00:00 bash
+3238485 ?        00:00:00 kworker/40:1
+3239283 ?        00:00:00 kworker/0:1-events
+3239288 ?        00:00:00 kworker/59:0-events
+3241124 ?        00:00:00 kworker/u130:0-events_unbound
+3241167 ?        00:00:00 kworker/28:0-mm_percpu_wq
+3241422 pts/71   00:20:28 python3
+3241758 pts/134  00:29:55 python3
+3242051 ?        00:00:00 kworker/51:1-events
+3242661 ?        00:00:00 kworker/11:0-events
+3243151 ?        00:00:00 kworker/42:2
+3243660 ?        00:00:00 kworker/61:1-mm_percpu_wq
+3243667 ?        00:00:00 kworker/50:0-mm_percpu_wq
+3243814 ?        00:00:00 kworker/22:1-mm_percpu_wq
+3244059 ?        00:00:00 kworker/6:1
+3244080 ?        00:00:00 kworker/18:0-events
+3244236 ?        00:00:00 kworker/41:2-cgroup_destroy
+3246396 ?        00:00:00 kworker/58:2-mm_percpu_wq
+3247701 ?        00:00:00 kworker/10:0-cgroup_destroy
+3247730 ?        00:00:00 kworker/24:0-mm_percpu_wq
+3247993 ?        00:00:00 kworker/19:0-events
+3248971 ?        00:00:00 kworker/23:2-events
+3249474 pts/58   00:00:02 roslaunch
+3249854 ?        00:00:38 rosmaster
+3250068 ?        00:00:24 rosout
+3250097 ?        00:00:36 robot_state_pub
+3250101 ?        00:00:00 gzserver
+3250107 ?        00:00:00 gzclient
+3250122 ?        00:08:43 slam_gmapping
+3250137 ?        00:01:17 python3
+3250144 ?        00:02:58 rviz
+3250150 ?        00:17:16 python3
+3250333 ?        00:07:14 gzserver
+3250339 ?        00:07:52 gzclient
+3250900 ?        00:00:00 kworker/52:2-events
+3253197 ?        00:00:00 kworker/56:2-events
+3253205 ?        00:00:00 kworker/7:1-events
+3253647 ?        00:00:00 kworker/5:1-events
+3255596 ?        00:00:00 kworker/1:0-events
+3255918 ?        00:00:00 kworker/2:0
+3256141 ?        00:00:00 kworker/38:2
+3256323 pts/187  00:00:16 rostopic
+3257728 ?        00:00:00 kworker/9:2-cgroup_destroy
+3257780 pts/141  00:00:03 roslaunch
+3258060 ?        00:00:00 kworker/15:1-rcu_par_gp
+3258147 ?        00:00:00 cupsd
+3258148 ?        00:00:00 cups-browsed
+3258294 ?        00:00:38 rosmaster
+3258439 ?        00:00:22 rosout
+3258461 ?        00:00:34 robot_state_pub
+3258463 ?        00:00:00 gzserver
+3258466 ?        00:00:00 gzclient
+3258476 ?        00:07:24 slam_gmapping
+3258484 ?        00:01:11 python3
+3258489 ?        00:15:52 python3
+3258494 ?        00:02:12 rviz
+3258502 ?        00:01:56 python3
+3258507 ?        00:00:41 python3
+3258508 ?        00:01:15 python3
+3258717 ?        00:00:00 kworker/53:0-events
+3259071 ?        00:06:41 gzclient
+3259103 ?        00:07:37 gzserver
+3259883 ?        00:00:00 kworker/27:1-cgroup_destroy
+3260551 ?        00:00:00 kworker/30:2
+3260753 ?        00:00:21 systemd
+3260759 ?        00:00:00 (sd-pam)
+3260915 pts/227  00:00:00 rostopic
+3261555 ?        00:00:00 kworker/32:2-mm_percpu_wq
+3261892 ?        00:00:00 kworker/63:0-mm_percpu_wq
+3262208 pts/95   00:00:26 python3
+3262481 ?        00:00:00 kworker/47:0-events
+3263159 pts/57   00:00:35 rostopic
+3268067 ?        00:00:00 kworker/13:1-mm_percpu_wq
+3269432 ?        00:00:00 kworker/46:2-events
+3269440 ?        00:00:00 kworker/12:1-events
+3270187 ?        00:00:00 kworker/34:2
+3270346 ?        00:00:00 kworker/16:2-mm_percpu_wq
+3270459 pts/163  00:00:00 rostopic
+3270657 pts/149  00:00:02 gedit
+3271109 pts/34   00:00:00 bash
+3271503 pts/73   00:00:03 gedit
+3275210 pts/87   00:00:00 bash
+3278097 ?        00:00:00 kworker/52:0
+3278153 ?        00:00:00 kworker/51:0-events
+3279552 ?        00:00:00 kworker/16:3
+3282083 ?        00:00:00 kworker/u129:0-events_unbound
+3283246 pts/88   00:00:00 bash
+3283403 ?        00:00:00 kworker/u130:1-events_unbound
+3283591 ?        00:00:00 kworker/7:2
+3283640 ?        00:00:00 sshd
+3283676 ?        00:00:00 sshd
+3283677 pts/26   00:00:00 bash
+3283685 ?        00:00:00 kworker/32:1
+3283743 ?        00:00:00 sleep
+3283744 pts/88   00:00:01 roslaunch
+3283775 ?        00:00:00 sleep
+3283795 ?        00:00:08 rosmaster
+3283799 pts/89   00:00:11 python3
+3283810 ?        00:00:07 rosout
+3283820 ?        00:00:10 robot_state_pub
+3283821 ?        00:00:00 gzserver
+3283823 ?        00:00:00 gzclient
+3283836 ?        00:02:00 slam_gmapping
+3283839 ?        00:00:21 python3
+3283840 ?        00:00:47 rviz
+3283848 ?        00:00:23 python3
+3283909 ?        00:02:25 gzclient
+3283964 ?        00:02:37 gzserver
+3285026 ?        00:00:00 kworker/61:0-events
+3285077 ?        00:00:00 kworker/63:1
+3285638 ?        00:00:00 sleep
+3285826 ?        00:00:00 kworker/57:0-events
+3285961 ?        00:00:00 sleep
+3286161 ?        00:00:00 sleep
+3286533 pts/165  00:00:00 roslaunch
+3286564 ?        00:00:02 robot_state_pub
+3286565 ?        00:00:00 gzserver
+3286567 ?        00:00:00 gzclient
+3286580 ?        00:00:23 slam_gmapping
+3286582 ?        00:00:04 python3
+3286584 ?        00:00:11 rviz
+3286589 ?        00:00:06 python3
+3286597 ?        00:00:55 python3
+3286751 ?        00:00:24 gzclient
+3286754 ?        00:00:30 gzserver
+3287581 ?        00:00:02 ntpd
+3287792 ?        00:00:00 sleep
+3288164 pts/59   00:00:00 ps
+3288165 pts/59   00:00:00 less
+3288243 pts/14   00:00:00 watch
+3288244 pts/14   00:00:00 sh
+3288245 pts/14   00:00:00 kill_processes_
+3288248 pts/14   00:00:00 killall
+3307983 pts/105  00:00:00 bash
+3322081 ?        00:00:00 gvfsd
+3322086 ?        00:00:00 gvfsd-fuse
+3322096 ?        00:00:05 xdg-desktop-por
+3322101 ?        00:00:00 xdg-document-po
+3322105 ?        00:00:00 xdg-permission-
+3322115 ?        00:00:01 xdg-desktop-por
+3322123 ?        00:00:00 dconf-service
+3322129 ?        00:00:00 gnome-keyring-d
+3368496 ?        00:00:08 systemd
+3368498 ?        00:00:00 (sd-pam)
+3373393 ?        00:42:54 Xvnc
+3373468 ?        00:00:03 openbox
+3373502 ?        00:00:15 tint2
+3373518 ?        00:00:00 dbus-launch
+3373524 ?        00:00:00 dbus-daemon
+3373527 ?        00:00:02 update-notifier
+3373539 ?        00:00:00 applet.py
+3373549 ?        00:00:00 agent
+3373553 ?        00:00:12 nm-applet
+3373558 ?        00:00:00 at-spi-bus-laun
+3373606 ?        00:00:00 dbus-daemon
+3373615 ?        00:00:03 at-spi2-registr
+3383043 ?        00:00:00 gvfsd
+3383048 ?        00:00:00 gvfsd-fuse
+3383059 ?        00:00:04 xdg-desktop-por
+3383064 ?        00:00:00 xdg-document-po
+3383068 ?        00:00:00 xdg-permission-
+3383082 ?        00:00:00 xdg-desktop-por
+3383090 ?        00:00:00 dconf-service
+3383098 ?        00:00:00 gnome-keyring-d
+3402650 ?        00:00:00 tlsmgr
+3410888 ?        00:00:01 screen
+3410889 pts/14   00:00:00 bash
+3411017 pts/14   00:00:42 watch
+3463669 pts/126  00:00:00 bash
+3612951 pts/38   00:01:38 gedit
+3669895 ?        00:00:00 gvfsd
+3669902 ?        00:00:00 gvfsd-fuse
+3669935 ?        00:00:03 xdg-desktop-por
+3669940 ?        00:00:00 xdg-document-po
+3669945 ?        00:00:00 xdg-permission-
+3669956 ?        00:00:00 xdg-desktop-por
+3669964 ?        00:00:00 dconf-service
+3669972 ?        00:00:00 gnome-keyring-d
+3684228 ?        00:00:00 gvfsd
+3684237 ?        00:00:00 gvfsd-fuse
+3684266 ?        00:00:03 xdg-desktop-por
+3684271 ?        00:00:00 xdg-document-po
+3684275 ?        00:00:00 xdg-permission-
+3684286 ?        00:00:00 xdg-desktop-por
+3684297 ?        00:00:00 dconf-service
+3684304 ?        00:00:00 gnome-keyring-d
+3803084 ?        00:00:01 gnome-terminal-
+3803090 ?        00:00:00 gvfsd
+3803095 ?        00:00:00 gvfsd-fuse
+3803106 ?        00:00:03 xdg-desktop-por
+3803112 ?        00:00:00 xdg-document-po
+3803116 ?        00:00:00 xdg-permission-
+3803127 ?        00:00:00 xdg-desktop-por
+3803136 ?        00:00:00 dconf-service
+3803142 ?        00:00:00 gnome-keyring-d
+3803151 pts/149  00:00:00 bash
+3952438 ?        00:02:16 rosout
+3997966 ?        00:00:00 git-credential-
+4002195 pts/120  00:00:00 bash
+4006135 ?        00:58:53 rosout
+4035810 ?        00:00:00 agent
+4159335 ?        00:00:06 gvfs-udisks2-vo
+4159344 ?        00:00:00 gvfs-goa-volume
+4159349 ?        00:00:02 goa-daemon
+4159361 ?        00:00:00 goa-identity-se
+4159374 ?        00:00:00 gvfs-gphoto2-vo
+4159384 ?        00:00:00 gvfs-afc-volume
+4159390 ?        00:00:00 gvfs-mtp-volume
+4159725 ?        00:00:00 gvfsd-metadata
+4161088 pts/119  00:00:00 bash
+4179335 ?        00:00:00 agent
