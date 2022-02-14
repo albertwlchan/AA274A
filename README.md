@@ -1,7 +1,10 @@
 # ASL TurtleBot Final Project (RescueBot)
 # Group 34: Minjune Hwang, Albert Chan, Ammar Alqatari, Gautham Raghupathi
 
-This contains a _starting point_ for your final project. Below are _brief_ descriptions of the code. You are strongly encouraged to take a closer look into the code for more details of how and what the code does.
+This contains a _starting point_ for your final project. Below are _brief_ descriptions of the code. 
+
+Final Deliverable Youtube link:
+https://youtu.be/w62CDa_wGE8
 
 **File Descriptions:**
 
